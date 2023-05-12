@@ -45,12 +45,11 @@
 }
 
 .hero--container > h3 {
-	font-family: 'SF Pro Display';
-	font-weight: 400;
+	font-family: 'SofiaProRegular', sans-serif;
+	font-weight: 600;
 	font-size: 16px;
-	line-height: 19px;
+	line-height: 16px;
 	text-align: center;
-	letter-spacing: 0.045em;
 }
 
 .hero--container > h1 {
@@ -424,6 +423,7 @@ button.register-btn--red {
 .servants-of-God--img-group--hidden > img {
 	width: 100%;
 	object-fit: cover;
+	border-radius: 6px;
 }
 
 .servants-of-God--img-group {
@@ -518,7 +518,7 @@ button.register-btn--red {
 	text-align: center;
 	letter-spacing: 0.045em;
 	color: #423971;
-	max-width: 250px;
+	max-width: 300px;
 }
 
 .servants-of-God-silhouette--list > div.servants-of-God--single-silhouette {
@@ -560,7 +560,7 @@ button.register-btn--red {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: 26px 0;
+	padding: 26px 0 40px;
 	color: #ffffff;
 	background: url('/assets/images/hero-bg.png');
 	background-position: center center;
