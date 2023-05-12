@@ -83,7 +83,7 @@
 	letter-spacing: 0.045em;
 }
 
-.hero--container > button {
+.hero-register-btn {
 	margin-top: 33px;
 	display: flex;
 	flex-direction: row;
@@ -94,7 +94,7 @@
 	height: 48px;
 	background: #ffffff;
 	border-radius: 3px;
-	font-family: 'ClashDisplay-Regular', sans-serif;
+	font-family: 'ClashDisplay-Medium', sans-serif;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 17px;
@@ -276,13 +276,17 @@
 	color: #ff772b;
 }
 
+.what-is-smflx--container > p > span.red-text {
+	color: #c82127;
+}
+
 .what-is-smflx--container > ul {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	list-style-type: disc;
 	padding-left: 14px;
-	margin: 20px 0;
+	margin: 20px 0 0;
 	gap: 18px;
 }
 
@@ -791,8 +795,8 @@ button.register-btn--red {
 .accommodation--container {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	gap: 18px;
+	align-items: flex-start;
+	/* gap: 18px; */
 	padding: 0 25px;
 	color: #05052e;
 	margin: 48px 0;
@@ -811,16 +815,65 @@ button.register-btn--red {
 	line-height: 30px;
 	text-align: center;
 	letter-spacing: 0.045em;
+	margin: 0 auto 22px;
 }
 
 .accommodation--container > p {
-	font-family: 'ClashDisplay-Regular', sans-serif;
+	font-family: 'SofiaProRegular', sans-serif;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 16px;
 	line-height: 20px;
-	text-align: center;
+	text-align: left;
 	letter-spacing: 0.045em;
+}
+.accommodation--container > p > span {
+	font-family: 'SofiaProMedium', sans-serif;
+	font-weight: 600;
+}
+.accommodation--container > h6 {
+	font-family: 'SofiaProMedium', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: left;
+	letter-spacing: 0.045em;
+	margin: 22px 0;
+}
+
+.accommodation--container > p.hostel-breakdown {
+	margin: 20px 0 0;
+}
+
+.accommodation--container > p > span.red-text {
+	font-family: 'SofiaProMedium', sans-serif;
+	font-weight: 500;
+	color: #c82127;
+}
+
+.accommodation--container > ul {
+	list-style-type: disc;
+}
+
+.accommodation--container > ul.dashed {
+	margin: 0;
+	padding: 0 7px;
+	list-style-type: none;
+}
+.accommodation--container > ul.dashed > li {
+	text-indent: -5px;
+	font-family: 'SofiaProRegular', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.045em;
+	margin: 3px 0;
+}
+.accommodation--container > ul.dashed > li:before {
+	content: '–';
+	text-indent: -5px;
+	margin-right: 5px;
 }
 
 .accommodation-details-group {
@@ -929,6 +982,10 @@ button.register-btn--red {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 19px;
+}
+
+.prepare-your-heart--container > p > span {
+	font-weight: 600;
 }
 
 .prepare-your-heart--container > a {
