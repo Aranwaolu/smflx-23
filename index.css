@@ -148,6 +148,7 @@
 }
 
 .waging-a-warfare--container > h2 {
+	max-width: 250px;
 	font-family: 'ClashDisplay-Regular', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -157,12 +158,12 @@
 }
 
 .waging-a-warfare--container > h2 > span {
-	display: block;
-	font-family: 'ClashDisplay-Bold', sans-serif;
-	font-weight: 700;
+	font-family: 'ClashDisplay-SemiBold', sans-serif;
+	font-weight: 600;
 }
 
 .waging-a-warfare--container > p {
+	margin: 8px 0 0;
 	font-family: 'Sofia Pro', sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -271,6 +272,10 @@
 	font-weight: 700;
 }
 
+.what-is-smflx--container > p > span.orange-text {
+	color: #ff772b;
+}
+
 .what-is-smflx--container > ul {
 	width: 100%;
 	display: flex;
@@ -288,6 +293,10 @@
 	font-size: 14px;
 	line-height: 150%;
 	color: #312a50;
+}
+
+.what-is-smflx--container > ul > li > span {
+	font-weight: 700;
 }
 
 button.register-btn--red {
@@ -310,6 +319,10 @@ button.register-btn--red {
 	text-align: center;
 	letter-spacing: 0.045em;
 	color: #ffffff;
+}
+
+.wake-new-dawn--container > img {
+	width: 100%;
 }
 
 .wake-new-dawn--container > p {
@@ -384,6 +397,7 @@ button.register-btn--red {
 .servants-of-God--container__header > h2 {
 	width: 100%;
 	max-width: 255px;
+	height: 130px;
 	font-family: 'ClashDisplay-Regular';
 	font-style: normal;
 	font-weight: 400;
@@ -396,6 +410,16 @@ button.register-btn--red {
 .servants-of-God--container__header > h2 > span {
 	font-family: 'ClashDisplay-SemiBold';
 	font-weight: 600;
+}
+
+.servants-of-God--img-group--hidden {
+	margin: 11px 0 0;
+	width: 100%;
+}
+
+.servants-of-God--img-group--hidden > img {
+	width: 100%;
+	object-fit: cover;
 }
 
 .servants-of-God--img-group {
@@ -532,7 +556,7 @@ button.register-btn--red {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: 44px 0 48px;
+	padding: 26px 0;
 	color: #ffffff;
 	background: url('/assets/images/hero-bg.png');
 	background-position: center center;
@@ -541,14 +565,15 @@ button.register-btn--red {
 }
 
 .meeting-schedule--container > h3 {
+	max-width: 180px;
 	font-family: 'ClashDisplay-SemiBold', sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 24px;
-	line-height: 30px;
+	font-size: 20px;
+	line-height: 25px;
 	text-align: center;
 	letter-spacing: 0.045em;
-	margin: 23px;
+	margin: 0 auto 21px;
 }
 
 .meeting-schedule-full-day {
@@ -647,21 +672,6 @@ button.register-btn--red {
 	display: flex;
 	flex-direction: column;
 	padding: 50px 20px;
-}
-
-.meal-feeding-plan--bg-color {
-	position: absolute;
-	inset: 0;
-	width: 100%;
-	height: 292px;
-	background: #000000;
-	z-index: -1;
-	padding: 0 0 3px;
-}
-
-.meal-feeding-plan--bg-img {
-	width: 100%;
-	height: 100%;
 	background-image: url('/assets/images/meal-feeding-plan-bg-img.png');
 	background-position: center center;
 	background-size: cover;
@@ -695,12 +705,13 @@ button.register-btn--red {
 }
 
 .meal-feeding-plan--details-group {
-	padding: 0 6px;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 18px;
-	margin-bottom: 27px;
+	margin: 28px 0 50px;
+	color: #ffffff;
 }
 
 .meal-feeding-plan--details-group > h6 {
@@ -711,7 +722,6 @@ button.register-btn--red {
 	line-height: 22px;
 	text-align: center;
 	letter-spacing: 0.045em;
-	color: #05052e;
 }
 
 .meal-feeding-plan--detail {
@@ -727,7 +737,6 @@ button.register-btn--red {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 14px;
-	color: #423971;
 }
 
 .meal-feeding-plan--detail > span {
@@ -738,7 +747,6 @@ button.register-btn--red {
 	line-height: 17px;
 	text-align: right;
 	letter-spacing: 0.045em;
-	color: #423971;
 }
 
 /* Venue */
@@ -747,7 +755,7 @@ button.register-btn--red {
 	flex-direction: column;
 	align-items: center;
 	gap: 22px;
-	padding: 0 25px;
+	padding: 25px;
 	color: #05052e;
 }
 
@@ -769,6 +777,7 @@ button.register-btn--red {
 	line-height: 20px;
 	text-align: center;
 	letter-spacing: 0.045em;
+	max-width: 300px;
 }
 
 .venue--container > img {
@@ -787,6 +796,11 @@ button.register-btn--red {
 	padding: 0 25px;
 	color: #05052e;
 	margin: 48px 0;
+}
+
+.accommodation--container > a {
+	width: 100%;
+	max-width: 323px;
 }
 
 .accommodation--container > h2 {
@@ -906,6 +920,7 @@ button.register-btn--red {
 	line-height: 30px;
 	text-align: center;
 	letter-spacing: 0.045em;
+	max-width: 260px;
 }
 
 .prepare-your-heart--container > p {
@@ -916,11 +931,17 @@ button.register-btn--red {
 	line-height: 19px;
 }
 
+.prepare-your-heart--container > a {
+	width: 100%;
+	max-width: 314px;
+}
+
 .prepare-your-heart--container > img {
 	width: 100%;
 	height: 230px;
 	object-fit: cover;
 	border-radius: 4px;
+	background: #ffffff;
 }
 
 /* DESKTOP VIEW */
