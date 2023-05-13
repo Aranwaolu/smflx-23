@@ -20,10 +20,9 @@ const slideWidthWE = slidesWE[indexWE].clientWidth
 
 slideWE.style.transform = `translateX(${-slideWidthWE * indexWE}px)`
 
-console.log(slidesWE)
+// console.log(slidesWE)
 
 const startSlideWE = () => {
-	console.log('here')
 	slideIdWE = setInterval(() => {
 		moveToNextSlideWE()
 	}, intervalWE)
