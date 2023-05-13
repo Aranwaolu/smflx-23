@@ -136,8 +136,8 @@
 	right: 94px;
 }
 
-/* Waging a warfare */
-.waging-a-warfare--container {
+/* time to disrupt */
+.time-to-disrupt--container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -146,7 +146,7 @@
 	font-style: normal;
 }
 
-.waging-a-warfare--container > h2 {
+.time-to-disrupt--container > h2 {
 	max-width: 250px;
 	font-family: 'ClashDisplay-Regular', sans-serif;
 	font-style: normal;
@@ -156,12 +156,12 @@
 	color: #312a50;
 }
 
-.waging-a-warfare--container > h2 > span {
+.time-to-disrupt--container > h2 > span {
 	font-family: 'ClashDisplay-SemiBold', sans-serif;
 	font-weight: 600;
 }
 
-.waging-a-warfare--container > p {
+.time-to-disrupt--container > p {
 	margin: 8px 0 0;
 	font-family: 'Sofia Pro', sans-serif;
 	font-style: normal;
@@ -171,14 +171,38 @@
 	color: #423971;
 }
 
-.waging-a-warfare--container > p > span {
+.time-to-disrupt--container > p > span {
 	font-weight: 700;
 }
 
-.waging-a-warfare--container > img {
+.time-to-disrupt--container > img {
 	margin-top: 18px;
 	width: 100%;
 	z-index: -1;
+}
+
+/* Carousel Slider */
+.time-to-disrupt--carousel-container {
+	margin-top: 18px;
+	width: 100%;
+	height: 365px;
+	background: rgb(240, 239, 239);
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.time-to-disrupt--carousel-container > .free-slides {
+	display: flex;
+	height: 100%;
+}
+.time-to-disrupt--carousel-container > .free-slides > .slide {
+	min-width: 100%;
+}
+.time-to-disrupt--carousel-container > .free-slides > .slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /*  */
@@ -193,7 +217,8 @@
 }
 
 .what-is-smflx--container,
-.wake-new-dawn--container {
+.wake-new-dawn--container,
+.worship-experience--container {
 	width: 100%;
 	padding: 0 24px;
 	display: flex;
@@ -216,6 +241,7 @@
 }
 
 .what-is-smflx--bg-img,
+.worship-experience--bg-img,
 .wake-new-dawn--bg-img {
 	width: 100%;
 	height: 100%;
@@ -251,8 +277,22 @@
 	margin: 47px 0 11px;
 }
 
+.worship-experience--container > h2 {
+	width: 100%;
+	max-width: 320px;
+	font-family: 'ClashDisplay-Regular', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 0.045em;
+	color: #ffffff;
+	margin: 47px 0 11px;
+}
+
 .what-is-smflx--container > h2 > span,
-.wake-new-dawn--container > h2 > span {
+.wake-new-dawn--container > h2 > span,
+.worship-experience--container > h2 > span {
 	font-family: 'ClashDisplay-Semibold', sans-serif;
 	font-weight: 600;
 }
@@ -324,6 +364,20 @@ button.register-btn--red {
 	color: #ffffff;
 }
 
+.wake-new-dawn--bg-color {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 292px;
+	z-index: -1;
+	padding: 0 0 3px;
+	background: #96bcff;
+}
+
+.wake-new-dawn--bg-img {
+	background-image: url('/assets/images/wake-dawn-bg-img.png');
+}
+
 .wake-new-dawn--container > img {
 	width: 100%;
 }
@@ -341,7 +395,19 @@ button.register-btn--red {
 	margin: 21px 0 4px;
 }
 
-.wake-new-dawn--bg-color {
+.wake-new-dawn--second-img {
+	height: 303px;
+	width: 100%;
+	object-fit: cover;
+	margin-top: 11px;
+}
+
+/* Worship Experience */
+.worship-experience--container {
+	margin: 62px 0 0;
+}
+
+.worship-experience--bg-color {
 	position: absolute;
 	inset: 0;
 	width: 100%;
@@ -351,15 +417,49 @@ button.register-btn--red {
 	background: #96bcff;
 }
 
-.wake-new-dawn--bg-img {
+.worship-experience--bg-img {
 	background-image: url('/assets/images/wake-dawn-bg-img.png');
 }
 
-.wake-new-dawn--second-img {
-	height: 303px;
+.worship-experience--container > img {
 	width: 100%;
+}
+
+/* Worship experience carousel */
+.worship-experience--carousel-container {
+	margin-top: 18px;
+	width: 100%;
+	height: 270px;
+	background: transparent;
+	position: relative;
+	overflow: hidden;
+	/* z-index: -1; */
+}
+
+.worship-experience--carousel-container > .worship-experience-slides {
+	display: flex;
+	height: 100%;
+}
+.worship-experience--carousel-container > .worship-experience-slides > .worship-experience-slide {
+	min-width: 100%;
+}
+.worship-experience--carousel-container > .worship-experience-slides > .worship-experience-slide img {
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
-	margin-top: 11px;
+}
+
+.worship-experience--container > p {
+	font-family: 'Sofia Pro', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 150%;
+	color: #423971;
+}
+
+.worship-experience--container > p:not(:last-child) {
+	margin: 21px 0 4px;
 }
 
 /* Servants of God */
