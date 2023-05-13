@@ -98,7 +98,8 @@
 	font-size: 14px;
 	line-height: 17px;
 	letter-spacing: 0.045em;
-	color: #423971;
+	color: #423971 !important;
+	text-decoration: none !important;
 }
 
 .hero--floating-img-one,
