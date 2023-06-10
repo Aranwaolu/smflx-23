@@ -32,9 +32,10 @@
 	background: orange;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-end;
 	align-items: center;
-	padding: 40px 30px 0;
-	background-image: url('/assets/images/page-new-hero.png');
+	padding: 40px 30px;
+	background-image: url('/assets/images/page-new-hero-mobile.png');
 	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -676,8 +677,16 @@ a.register-btn--red {
 	color: #423971;
 }
 
+.servants-of-God--single > .servants-of-God--single-content > p > span {
+	font-weight: 800;
+}
+
 .servants-of-God--single > .servants-of-God--single-content > p:not(:last-child) {
 	margin: 0 0 20px;
+}
+
+.servants-of-God--single > .servants-of-God--single-content > p:nth-of-type(1) {
+	margin: 0;
 }
 
 .servants-of-God-silhouette--list {
@@ -1237,6 +1246,7 @@ a.register-btn--red {
 		color: #ffffff;
 		position: relative;
 		overflow: hidden;
+		background-image: url('/assets/images/page-new-hero.png');
 	}
 
 	.hero--container > h3 {
@@ -1279,6 +1289,7 @@ a.register-btn--red {
 		font-size: 24px;
 		line-height: 30px;
 		color: #05052e !important;
+		display: none;
 	}
 
 	.hero--floating-img-one {
