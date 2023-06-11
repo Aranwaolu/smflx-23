@@ -644,6 +644,10 @@ a.register-btn--red {
 	border-radius: 7px;
 }
 
+.pst-Tosin-portrait {
+	object-position: top;
+}
+
 .servants-of-God--single > .servants-of-God--single-content > h6 {
 	font-family: 'Avenir', sans-serif;
 	font-style: normal;
