@@ -8,291 +8,192 @@
 
 /* NAV */
 /* .nav--container { */
-	/* position: sticky; */
-	/* top: 0; */
-	/* width: 100%; */
-	/* height: 110px; */
-	/* background: #ffffff; */
-	/* padding: 30px 24px; */
-	/* display: flex; */
-	/* flex-direction: row; */
-	/* justify-content: flex-start; */
-	/* z-index: 100; */
+/* position: sticky; */
+/* top: 0; */
+/* width: 100%; */
+/* height: 110px; */
+/* background: #ffffff; */
+/* padding: 30px 24px; */
+/* display: flex; */
+/* flex-direction: row; */
+/* justify-content: flex-start; */
+/* z-index: 100; */
 /* } */
 
 /* .nav--container > img { */
-	/* height: 53px; */
-	/* width: 102px; */
+/* height: 53px; */
+/* width: 102px; */
 /* } */
 
-*{
+* {
+	padding: 0;
 
+	margin: 0;
 
+	box-sizing: border-box;
 
-    padding: 0;
+	text-decoration: none;
 
-
-
-    margin: 0;
-
-
-
-    box-sizing: border-box;
-
-
-
-    text-decoration: none;
-
-
-
-    list-style: none;
-
-
-
+	list-style: none;
 }
 
-
-
-.smflx-logo-holder{
-
-
-
-    width: 50%;
+.smflx-logo-holder {
+	width: 50%;
 }
 
-.smflx-logo img{
-
-    width: 8.95rem;
-    height: 4.63rem;
+.smflx-logo img {
+	width: 8.95rem;
+	height: 4.63rem;
 }
 
-
-
-.navbar{
-    padding: 0 6rem;
-    width: 100%;
-    height: 6.81rem;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+	padding: 0 6rem;
+	width: 100%;
+	height: 6.81rem;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.navbarlists{
+.navbarlists {
+	width: 50%;
 
+	display: flex;
 
-
-    width: 50%;
-
-
-
-    display: flex;
-
-
-
-    justify-content: space-between;
-
-
-
-    
-
-
-
+	justify-content: space-between;
 }
 
-
-
-.navbar .burger-menu{
-
-
-
-    display: none;
-
-
-
+.navbar .burger-menu {
+	display: none;
 }
 
+.navbarlists a {
+	font-size: 2rem;
 
-
-.navbarlists a{
-
-
-
-    font-size: 2rem;
-
-
-
-    color: #423971;
-
-
-
+	color: #423971;
 }
-
-
 
 /* Note: backdrop-filter has minimal browser support */
 
-
-
-.navbar .mobileNavMenu{
-
-
-
-    display: none;
-
-
-
+.navbar .mobileNavMenu {
+	display: none;
 }
 @media (max-width: 43.75rem) {
+	.navbar {
+		padding: 0 1.38rem;
 
-    
+		width: 100%;
 
-    .navbar{
+		height: 6.81rem;
 
-        padding: 0 1.38rem;
+		background-color: #ffffff;
 
-        width: 100%;
+		display: flex;
 
-        height: 6.81rem;
+		justify-content: space-between;
 
-        background-color: #FFFFFF;
+		align-items: center;
+	}
 
-        display: flex;
+	.smflx-logo img {
+		width: 8.95rem;
 
-        justify-content: space-between;
+		height: 3.29rem;
+	}
 
-        align-items: center;
+	.navbar .navbarlists {
+		display: none;
+	}
 
-    
+	.navbar .burger-menu {
+		display: block;
+	}
 
-    }
+	.navbar .burger-menu .bar {
+		font-size: 1.4rem;
+	}
 
-    
+	.navbar .mobileNavMenu {
+		width: 100%;
 
-    
+		height: 100%;
 
-    .smflx-logo img{
+		background: #05052e;
 
-        width: 8.95rem;
+		display: block;
 
-        height: 3.29rem;
+		position: absolute;
 
-    }
+		left: 0;
 
-    .navbar .navbarlists{
+		top: 0;
 
-        display: none;
+		color: white;
 
-    }
+		padding: 0;
 
-    
+		margin: 0;
 
-    .navbar .burger-menu{
+		z-index: 999;
 
-        display: block;
+		transform: translateX(-200%);
 
-    }
+		transition: 1s;
+	}
 
-    .navbar .burger-menu .bar{
+	.open {
+		transform: translateX(0%) !important;
+	}
 
-        font-size: 1.4rem;
+	.navbar .mobileNavMenu .mobileNavbarLists {
+		width: 100%;
 
-    }
+		height: 80%;
 
-    .navbar .mobileNavMenu{
+		display: flex;
 
-        width: 100%;
+		flex-direction: column;
 
-        height: 100%;
+		justify-content: space-around;
 
-        background: #05052E;
+		align-items: center;
+	}
 
-        display: block;
-
-        position: absolute;
-
-        left: 0;
-
-        top: 0;
-
-        color: white;
-
-        padding: 0;
-
-        margin: 0;
-
-        z-index: 999;
-
-        transform: translateX(-200%);
-
-        transition: 1s;
-
-    }
-
-    .open{
-
-        transform: translateX(0%) !important;
-
-    }
-
-    .navbar .mobileNavMenu .mobileNavbarLists{
-
-        width: 100%;
-
-        height: 80%;
-
-        display: flex;
-
-        flex-direction: column;
-
-        justify-content: space-around;
-
-        align-items: center;
-
-    }
-
-    /* .navbar .mobileNavMenu .mobileNavbarList a{
+	/* .navbar .mobileNavMenu .mobileNavbarList a{
 
         color: 20rem;
 
     } */
 
-    .navbar .mobileNavMenu a{
+	.navbar .mobileNavMenu a {
+		color: white;
 
-        color: white;
+		font-size: 1.88rem;
 
-        font-size: 1.88rem;
+		font-weight: 700;
+	}
 
-        font-weight: 700;
+	.navbar .mobileNavMenu .close {
+		width: 100%;
 
-    }
+		height: 10%;
 
-    .navbar .mobileNavMenu .close{
+		display: flex;
 
-        width: 100%;
+		justify-content: end;
 
-        height: 10%;
+		align-items: end;
 
-        display: flex;
+		padding: 0 4rem;
+	}
 
-        justify-content: end;
+	.navbar .mobileNavMenu .close img {
+		font-size: 1.5rem;
 
-        align-items: end;
-
-        padding: 0 4rem ;
-
-    }
-
-    .navbar .mobileNavMenu .close img{
-
-        font-size: 1.5rem;
-
-        font-family: 500;
-
-    }
-
+		font-family: 500;
+	}
 }
-
 
 /* HERO */
 .hero--container {
