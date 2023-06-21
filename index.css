@@ -58,68 +58,25 @@
 
 
     width: 50%;
-
-
-
 }
-
-
 
 .smflx-logo img{
 
-
-
     width: 8.95rem;
-
-
-
     height: 4.63rem;
-
-
-
 }
 
 
 
 .navbar{
-
-
-
     padding: 0 6rem;
-
-
-
     width: 100%;
-
-
-
     height: 6.81rem;
-
-
-
     background-color: #FFFFFF;
-
-
-
     display: flex;
-
-
-
     justify-content: space-between;
-
-
-
     align-items: center;
-
-
-
-
-
-
-
 }
-
-
 
 .navbarlists{
 
@@ -238,7 +195,7 @@
 
     .navbar .burger-menu .bar{
 
-        font-size: 1.09rem;
+        font-size: 1.4rem;
 
     }
 
@@ -328,7 +285,7 @@
 
     .navbar .mobileNavMenu .close img{
 
-        font-size: 1.29rem;
+        font-size: 1.5rem;
 
         font-family: 500;
 
