@@ -69,3 +69,25 @@ yearSelect.addEventListener('change', function () {
     }
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all the navigation buttons
+  const navigationButtons = document.querySelectorAll('.navigation-button button');
+
+  // Add click event listener to each navigation button
+  navigationButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      const buttonNumber = parseInt(button.textContent); // Get the number from the button
+
+      // Find the corresponding transcript row
+      const transcriptRow = document.querySelector('.transcript-by-pastors-container:nth-child(' + (buttonNumber + 3) + ')');
+
+      // Scroll to the transcript row
+      if (transcriptRow) {
+        transcriptRow.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+});
