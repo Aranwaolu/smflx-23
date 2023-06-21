@@ -1,0 +1,199 @@
+.navbar {
+	padding: 0 6rem;
+	width: 100%;
+	height: 6.81rem;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbarlists {
+	width: 50%;
+	display: flex;
+	justify-content: end;
+	gap: 3.13rem;
+}
+.navbar .burger-menu {
+	display: none;
+}
+.navbarlists a {
+	font-size: 1.13rem;
+	color: #423971;
+	/* font-family: 'Sofia Pro' sans-serif; */
+	font-family: 'SofiaProRegular', sans-serif;
+}
+.navbar .mobileNavMenu {
+	display: none;
+}
+.quicklinks-container {
+	width: 100%;
+	height: auto;
+	background-image: url('/assets/images/quicklinks-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2.69rem 6rem 6rem 6rem;
+	font-family: 'Clash Display' sans-serif;
+	font-weight: 500;
+}
+.quicklinks-container .quicklinks-logo {
+	padding-bottom: 2.51rem;
+}
+.quicklinks-container .quiklinks-menu {
+	width: 70.28%;
+	height: auto;
+	background: rgba(255, 255, 255, 0.43);
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(27px);
+	border-radius: 9px;
+	padding: 4.5rem 3.31rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.69rem;
+	font-family: 'ClashDisplay-Medium', sans-serif;
+	/* Note: backdrop-filter has minimal browser support */
+}
+.quicklinks-container .quicklinks-col {
+	width: 80%;
+	height: 6.19rem;
+	background: #ffffff;
+	border: 1px solid #d9f1fb;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 2.56rem;
+}
+.quicklinks-container .quicklinks-col a {
+	font-size: 1.25rem;
+	color: #05052e;
+}
+
+@media (max-width: 43.75rem) {
+	.navbar {
+		padding: 0 22.5px;
+		width: 100%;
+		height: 109px;
+		background-color: #ffffff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-family: 'SofiaProRegular', sans-serif;
+	}
+
+	.smflx-logo img {
+		width: 8.95rem;
+		height: 3.29rem;
+	}
+	.navbar .navbarlists {
+		display: none;
+	}
+
+	.navbar .burger-menu {
+		display: block;
+	}
+	.navbar .burger-menu .bar {
+		font-size: 17.5px;
+	}
+	.navbar .mobileNavMenu {
+		width: 100%;
+		height: 100%;
+		background: #05052e;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		color: white;
+		padding: 0;
+		margin: 0;
+		z-index: 999;
+		font-family: 'ClashDisplay-Medium', sans-serif;
+		transform: translateX(-200%);
+		transition: 1s;
+	}
+	.open {
+		transform: translateX(0%) !important;
+	}
+	.navbar .mobileNavMenu .mobileNavbarLists {
+		width: 100%;
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	/* .navbar .mobileNavMenu .mobileNavbarList a{
+        color: 20rem;
+
+    } */
+	.navbar .mobileNavMenu a {
+		color: white;
+		font-size: 30px !important;
+		font-family: 'Clash Display' sans-serif;
+		font-weight: 700;
+	}
+	.navbar .mobileNavMenu .close {
+		width: 100%;
+		height: 10%;
+		display: flex;
+		justify-content: end;
+		align-items: end;
+		padding: 0 4rem;
+	}
+	.navbar .mobileNavMenu .close img {
+		font-size: 1.29rem;
+		font-family: 500;
+	}
+	.quicklinks-container {
+		width: 100%;
+		height: auto;
+		background-image: url(./assets/images/quicklinks-bg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2.56rem 0 5.44rem 0;
+	}
+	.quicklinks-container .quicklinks-logo {
+		padding-bottom: 2.51rem;
+		/* background-color: lightblue; */
+	}
+	.quicklinks-container .quiklinks-menu {
+		width: 100%;
+		height: auto;
+		background: rgba(255, 255, 255, 0.13);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		backdrop-filter: blur(27px);
+		/* Note: backdrop-filter has minimal browser support */
+		border-radius: 9px;
+		padding: 2.25rem 1.25rem 4.25rem 1.25rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		/* gap: 0.69rem; */
+		/* Note: backdrop-filter has minimal browser support */
+	}
+	.quicklinks-container .quicklinks-col {
+		width: 100%;
+		height: 6.19rem;
+		background: #ffffff;
+		border: 1px solid #d9f1fb;
+		border-radius: 6px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* padding: 0 2.56rem; */
+	}
+	.quicklinks-container .quicklinks-col a {
+		font-size: 1.25rem;
+		color: #05052e;
+	}
+}
