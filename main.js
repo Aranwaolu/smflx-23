@@ -67,3 +67,4 @@ slideContainer.addEventListener('mouseenter', () => {
 slideContainer.addEventListener('mouseleave', startSlide)
 
 startSlide()
+

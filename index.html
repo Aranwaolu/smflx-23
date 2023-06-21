@@ -4,19 +4,59 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/resources/fontawesome-free-5.15.4-web/all.min.css">
+		<link rel="stylesheet" href="./reset.css" />
+		<link rel="stylesheet" href="./quicklinks.css">
+		<link rel="stylesheet" href="./index.css" />
 
-		<link rel="stylesheet" href="reset.css" />
-		<link rel="stylesheet" href="index.css" />
-
-		<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
 
 		<title>SMFLX'23</title>
 	</head>
 
 	<body>
 		<main>
-			<nav class="nav--container">
-				<img src="/assets/images/lively-meetings-logo.svg" alt="" />
+			<nav class="navbar">
+
+				<a href="" class="smflx-logo-holder">
+					<img src="./assets/images/smflx-logo.png" alt="" class="smflx-logo">
+				</a>
+				<ul class="navbarlists">
+					<li class="navbarlist">
+						<a href="#">Photo Gallery</a>
+					</li>
+					<li class="navbarlist">
+						<a href="#">Messages</a>
+					</li>
+					<li class="navbarlist">
+						<a href="#">Transcripts</a>
+					</li>
+				</ul>
+				<div class="burger-menu">
+					<i class="fas fa-bars bar"></i>
+				</div>
+	
+				<div class="mobileNavMenu">
+					<div class="close">
+						<span class="span">
+							<img src="./assets/images/close-bar.png" alt="close bar" class="close-bar">
+						</span>
+					</div>
+					<ul class="mobileNavbarLists">
+						<li class="mobileNavbarList">
+							<a href="./index.html">Home</a>
+						</li>
+						<li class="mobileNavbarList">
+							<a href="#">Messages</a>
+						</li>
+						<li class="mobileNavbarList">
+							<a href="#">Photo Gallery</a>
+						</li>
+						<li class="mobileNavbarList">
+							<a href="#">Transcripts</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 
 			<div class="hero--container">
@@ -726,7 +766,8 @@
 			<img src="/assets/images/event-mobile-view-img.png" alt="" />
 		</div> -->
 
-		<script src="main.js"></script>
-		<script src="worship.js"></script>
+		<script src="./main.js"></script>
+		<script src="./worship.js"></script>
+		<script src="./quicklinks.js"></script>
 	</body>
 </html>
