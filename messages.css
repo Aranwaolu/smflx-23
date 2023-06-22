@@ -1,0 +1,182 @@
+.breadcrumb{
+    width: 100%;
+    height: 42.88rem;
+    background-image: url(./assets/images/messages-hero.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.breadcrumb-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+    /* background-color: red; */
+    /* padding: 61px 100px; */
+}
+.breadcrumb-heading{
+    color: white;
+    font-weight: 400;
+    font-size: 48px;
+    /* text-align: center; */
+}
+.mt1{
+    color: white;
+    display: block;
+    
+}
+.mt2{
+    color: #F47B20;
+}
+div.breadcrumb-para1{
+    width: 500px;
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: 300;
+    font-family: 'SofiaProRegular', sans-serif;
+    /* line-height: 150%; */
+    /* text-align: center; */
+    align-self: center;
+}
+
+/* Messages Gallery  */
+.messages-gallery{
+    width: 100%;
+    height: auto;
+    background-color: #E7FFFA;
+    padding: 53px;
+    font-family: 'ClashDisplay-Medium', sans-serif;
+}
+.messages-gallery .search-col{
+    margin: 3rem 0;
+}
+.input{
+    width: 439px;
+    height: 55px;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+}
+.messages-gallery .input::placeholder{
+	margin-left: 4rem;
+	color: #42397147;
+	/* color: red; */
+    padding-left: 2.5rem;
+    font-family: 'Sofia Pro' sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+
+}
+.messages-gallery .search-icon{
+    height: 19.79px;
+    width: 19.79px;
+    border-radius: 0px;
+	position: absolute;
+	margin-top: 17px;
+	margin-left: 13px;
+	cursor: pointer;
+}
+.select1{
+    width: 211px;
+    height: 55px;
+    border-radius: 4px;
+    border: 1px solid #E7E7E7;
+    /* padding: 0 4rem; */
+}
+.select2{
+    width: 249px;
+    height: 55px;
+    border-radius: 4px;
+    border: 1px solid #E7E7E7;
+}
+.messages-gallery-container{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 26px;
+    margin: 2rem 0;
+}
+ .messages-gallery-container .messages-gallery-container-col{
+    width: 40%;
+    /* height: 21.85rem; */
+    height: auto;
+    background-color: white;
+    border-radius: 11px;
+    overflow: hidden;
+ }
+ .messages-gallery-container-col .img-col{
+    width: 100%;
+    height: 10rem;
+    height: auto;
+ }
+ .messages-gallery-container .messages-gallery-container-col img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* aspect-ratio: 4/2; */
+    
+    
+ }
+ .messages-gallery-container-col .mgc-text-col{
+    width: 100%;
+    height: 15rem;
+    padding: 20.5px 53px 65px 53px;
+}
+.mgc-text-col h3{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+}
+.mgc-text-col .mgc-title{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #C82127;
+}
+.mgc-text-col .program{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #423971;
+}
+.mgc-text-col .mgc-btn1{
+    background-color: #C82127;
+    width: 172px;
+    height: 56px;
+    border-radius: 3px;
+    border: 1px solid #C82127;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.mgc-text-col .mgc-btn2{
+    background-color: white;
+    width: 175px;
+    height: 56px;
+    border-radius: 3px;
+    border: 1px solid rgba(49, 42, 80, 0.24);
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.mgc-text-col .mgc-btn1:hover{
+    color: black;
+    background-color: transparent;
+}
+.mgc-text-col .mgc-btn2:hover{
+    color: #312A50;
+    background-color: rgba(49, 42, 80, 0.24);
+}
+.mgc-text-col .btn-col{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 19px;
+}
