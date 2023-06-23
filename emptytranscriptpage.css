@@ -1,493 +1,139 @@
 *{
-
-
-
     padding: 0;
-
-
-
     margin: 0;
-
-
-
     box-sizing: border-box;
-
-
-
     text-decoration: none;
-
-
-
     list-style: none;
-
-
-
 }
-
-
-
 .smflx-logo-holder{
-
-
-
     width: 50%;
-
-
-
 }
-
-
-
 .smflx-logo img{
-
-
-
     width: 8.95rem;
-
-
-
     height: 4.63rem;
-
-
-
 }
-
-
-
 .navbar{
-
-
-
     padding: 0 6rem;
-
-
-
     width: 100%;
-
-
-
     height: 6.81rem;
-
-
-
     background-color: #FFFFFF;
-
-
-
     display: flex;
-
-
-
     justify-content: space-between;
-
-
-
     align-items: center;
-
-
-
-
-
-
-
 }
-
-
-
+.active{
+    color:#C82127;
+    
+}
 .navbarlists{
-
-
-
     width:100%;
-
-
-
     display: flex;
-
-
-
     justify-content: space-between;
-
-
-
     
-
-
-
 }
-
-
-
 .navbar .burger-menu{
-
-
-
     display: none;
-
-
-
 }
-
-
-
 .navbarlists a{
-
-
-
     font-size: 2rem;
-
-
-
     color: #423971;
-
-
-
 }
-
-
-
 /* Note: backdrop-filter has minimal browser support */
-
-
-
 .navbar .mobileNavMenu{
-
-
-
     display: none;
-
-
-
 }
-
-
-
 @media (max-width:780px) {
-
-
-
     
-
-
-
     .navbar{
-
-
-
         padding: 0 1.38rem;
-
-
-
         width: 100%;
-
-
-
         height: 6.81rem;
-
-
-
         background-color: #FFFFFF;
-
-
-
         display: flex;
-
-
-
         justify-content: space-between;
-
-
-
         align-items: center;
-
-
-
     
-
-
-
     }
-
-
-
     .smflx-logo img{
-
-
-
         width: 8.95rem;
-
-
-
         height: 3.29rem;
-
-
-
     }
-
     .navbar .navbarlists{
-
-
-
         display: none;
-
-
-
     } 
-
-
-
     .navbar .burger-menu{
-
-
-
         display: block;
-
-
-
     }
-
-
-
     .navbar .burger-menu .bar{
-
-
-
         font-size: 1.09rem;
-
-
-
     }
-
-
-
     .navbar .mobileNavMenu{
-
-
-
         width: 100%;
-
-
-
         height: 100%;
-
-
-
         background: #05052E;
-
-
-
         display: block;
-
-
-
         position: absolute;
-
-
-
         left: 0;
-
-
-
         top: 0;
-
-
-
         color: white;
-
-
-
         padding: 0;
-
-
-
         margin: 0;
-
-
-
         z-index: 999;
-
-
-
         transform: translateX(-200%);
-
-
-
         transition: 1s;
-
-
-
     }
-
-
-
     .open{
-
-
-
         transform: translateX(0%) !important;
-
-
-
     }
-
-
-
     .navbar .mobileNavMenu .mobileNavbarLists{
-
-
-
         width: 100%;
-
-
-
         height: 80%;
-
-
-
         display: flex;
-
-
-
         flex-direction: column;
-
-
-
         justify-content: space-around;
         margin: 5rem;
-
-
         align-items: center;
-
-
-
     }
-
-
-
     /* .navbar .mobileNavMenu .mobileNavbarList a{
-
-
-
         color: 20rem;
-
-
-
-
-
-
-
     } */
-
-
-
     .navbar .mobileNavMenu a{
-
-
-
         color: white;
-
-
-
         font-size: 1.88rem;
-
-
-
         font-weight: 700;
-
-
-
     }
-
-
-
     .navbar .mobileNavMenu .close{
-
-
-
         width: 100%;
-
-
-
         height: 10%;
-
-
-
         display: flex;
-
-
-
         justify-content: end;
-
-
-
         align-items: end;
-
-
-
         padding: 0 4rem ;
-
-
-
     }
-
-
-
     .navbar .mobileNavMenu .close img{
-
-
-
         font-size: 1.29rem;
-
-
-
         font-family: 500;
-
-
-
     }
-
-
-
 }
-
-
 /* PHOTO GALLERY */
-
 .photo-gallery-hero-container{
-
 	width: 100%;
-
 	height: 100vh;
-
 	display: flex;
-
 	flex-direction: column;
-
 	justify-content: center;
-
 	align-items: center;
-
 	padding: 40px 20px;
-
     background-image: url('/assets/images/image\ 18.png');
-
 	background-position: bottom center;
-
 	background-size: cover;
-
 	background-repeat: no-repeat;
-
 	font-style: normal;
-
 	color: #ffffff;
-
 	/* position: relative; */
-
 	/* overflow: hidden; */
 }
-
 .hero--container--transcript >h4{
-
     font-family: 'Clash Display';
     font-style: normal;
     font-weight: 700;
@@ -500,7 +146,6 @@
     color: #FFFFFF;
         
     }
-
     .hero--container--transcript >p{
         width: 60%;
         margin: 1px auto;
@@ -524,7 +169,6 @@
         width: 100%;
         height: 939px;
      
-
         
     
     }
@@ -543,13 +187,10 @@
     .smflx-photo-gallery-head >div{
         padding: 25px;
     }
-
-
 .smflx-photo-gallery-text {
 padding: 150px 90px;
 text-align: center;
 }
-
 .smflx-photo-gallery-text >h5{
     width: 300px;
     margin: 2% auto;
@@ -561,11 +202,7 @@ text-align: center;
     letter-spacing: 0em;
     text-align: center;
    color: #05052E;
-
-
-
 }
-
 .smflx-photo-gallery-text >p{
     width: 639px;
     margin: 2% auto;
@@ -576,8 +213,6 @@ text-align: center;
     line-height: 30px;
     letter-spacing: 0em;
     
-
-
 }
 .smflx-photo-gallery-svg-container{
  
@@ -585,11 +220,7 @@ text-align: center;
 .smflx-photo-gallery-svg-container >img{
 width: 134.8067169189453px;
 height: 118.13706970214844px;
-
-
-
 }
-
 /* @media(max-width:1025px){ */
     /* .smflx-photo-gallery-head h5{ */
 /*  */
@@ -608,9 +239,7 @@ height: 118.13706970214844px;
 /*  */
 /*  */
 /* } */
-
 @media(max-width:500px){
-
     .photo-gallery-hero-container{
         width: 100%;
         height: 70vh;
@@ -629,14 +258,11 @@ height: 118.13706970214844px;
         /* overflow: hidden; */
     
     }
-
     .smflx-photo-gallery-text {
         padding: 100px 40px;
         text-align: center;
         }
-
     .smflx-photo-gallery-text >p{
-
         width: 260px;
     
         margin: 10% auto;
@@ -688,9 +314,6 @@ height: 118.13706970214844px;
     
     
     .hero--container--transcript >h4{
-
-
-
         font-family: 'Clash Display';
     
         font-style: normal;
@@ -715,7 +338,6 @@ height: 118.13706970214844px;
     
         }
         .hero--container--transcript >p{
-
             width: 100%;
     
             margin: 1px auto;
@@ -747,4 +369,3 @@ height: 118.13706970214844px;
             }
     
     
-
