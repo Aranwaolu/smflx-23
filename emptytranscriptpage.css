@@ -279,6 +279,13 @@ height: 118.13706970214844px;
         letter-spacing: 0em;
         
     }
+    .smflx-photo-gallery-head h3{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 49px;
+        color: #312A50;
+    }
         
         .smflx-photo-gallery-text >h5{
             width: 250px;
