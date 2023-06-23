@@ -7,25 +7,12 @@ const openEl = document.querySelector('.burger-menu')
 const closeEl = document.querySelector('.close')
 
 openEl.addEventListener('click', ()=>{
-
-
-
     mobileMenuEl.classList.toggle("open");
-
 })
 
 closeEl.addEventListener('click', ()=>{
-
     mobileMenuEl.classList.remove("open");
-
-
-
 })
-
-
-
-
-
 // Time to disrupt animation
 const slideContainer = document.querySelector('.time-to-disrupt--carousel-container')
 const slide = document.querySelector('.free-slides')
@@ -47,7 +34,6 @@ slide.prepend(lastClone)
 const slideWidth = slides[index].clientWidth
 
 slide.style.transform = `translateX(${-slideWidth * index}px)`
-
 // console.log(slides)
 
 const startSlide = () => {
@@ -65,7 +51,6 @@ slide.addEventListener('transitionend', () => {
 		index = 1
 		slide.style.transform = `translateX(${-slideWidth * index}px)`
 	}
-
 	if (slides[index].id === lastClone.id) {
 		slide.style.transition = 'none'
 		index = slides.length - 2

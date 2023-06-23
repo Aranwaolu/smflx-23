@@ -3,14 +3,11 @@ const mobileMenuEl = document.querySelector('.mobileNavMenu')
 const openEl = document.querySelector('.burger-menu')
 const closeEl = document.querySelector('.close')
 openEl.addEventListener('click', ()=>{
-
     mobileMenuEl.classList.toggle("open");
 })
 closeEl.addEventListener('click', ()=>{
     mobileMenuEl.classList.remove("open");
-
 })
-
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Get the search input element
@@ -42,23 +39,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-
   // Get the select element
 const yearSelect = document.querySelector('select[name="Year 2023"]');
-
 // Get all the transcript containers
 const transcriptContainers = document.querySelectorAll('.transcript-by-pastors-container');
-
 // Add event listener to the select element
 yearSelect.addEventListener('change', function () {
   // Get the selected year
   const selectedYear = this.value;
-
   // Loop through all the transcript containers
   transcriptContainers.forEach(function (container) {
     // Get the year from the transcript container
     const transcriptYear = container.querySelector('p span').textContent;
-
     // Check if the transcript year matches the selected year
     if (transcriptYear.includes(selectedYear)) {
       // Show the transcript container
@@ -75,7 +67,6 @@ yearSelect.addEventListener('change', function () {
 document.addEventListener('DOMContentLoaded', function() {
   // Get all the navigation buttons
   const navigationButtons = document.querySelectorAll('.navigation-button button');
-
   // Add click event listener to each navigation button
   navigationButtons.forEach(function(button) {
     button.addEventListener('click', function() {
@@ -83,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Find the corresponding transcript row
       const transcriptRow = document.querySelector('.transcript-by-pastors-container:nth-child(' + (buttonNumber + 3) + ')');
-
       // Scroll to the transcript row
       if (transcriptRow) {
         transcriptRow.scrollIntoView({ behavior: 'smooth' });
