@@ -220,7 +220,60 @@ text-align: center;
 width: 134.8067169189453px;
 height: 118.13706970214844px;
 }
-/* @media(max-width:1025px){ */
+@media(max-width:1025px){
+    .hero--container--transcript h4{
+       
+        font-family: 'Clash Display';
+    
+        font-style: normal;
+    
+        font-weight: 700;
+    
+        font-size: 34px;
+    
+        line-height: 59px;
+    
+        /* identical to box height */
+    
+        text-align: center;
+        color: #FFFFFF;
+        }
+        .hero--container--transcript >p{
+            width:40%;
+            margin: 1px auto;
+            font-family: 'Sofia Pro';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 150%;
+            /* or 36px */
+            
+            text-align: center;
+            
+            color: #FFFFFF;
+               
+            
+            }
+    
+        .hero--container--transcript p{
+            width: 60%;
+    
+            margin: 1px auto;
+    
+            font-family: 'Sofia Pro';
+    
+            font-style: normal;
+    
+            font-weight: 300;
+    
+            font-size: 24px;
+    
+            line-height: 150%;
+    
+            /* or 36px */
+            text-align: center;
+            color: #FFFFFF;
+            }
     /* .smflx-photo-gallery-head h5{ */
 /*  */
         /* font-style: normal; */
@@ -236,8 +289,7 @@ height: 118.13706970214844px;
     /* } */
 /*  */
 /*  */
-/*  */
-/* } */
+/*  */ }
 @media(max-width:500px){
     .photo-gallery-hero-container{
         width: 100%;
@@ -246,7 +298,7 @@ height: 118.13706970214844px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 40px 40px;
+        padding: 40px 60px;
         background-image: url('/assets/images/bg.png');
         background-position: bottom center;
         background-size: cover;
@@ -258,33 +310,26 @@ height: 118.13706970214844px;
     
     }
     .smflx-photo-gallery-text {
-        padding: 100px 40px;
+        padding: 100px 0px;
         text-align: center;
         }
     .smflx-photo-gallery-text >p{
-        width: 260px;
-    
+        width: 70%;
         margin: 10% auto;
     
         height: 60px;
     
         font-family:' Sofia Pro';
     
-        font-size: 20px;
+        font-size: 12px;
     
         font-weight: 300;
     
         line-height: 30px;
     
         letter-spacing: 0em;
+        color: lightgray;
         
-    }
-    .smflx-photo-gallery-head h3{
-        font-style: normal;
-        font-weight: 600;
-        font-size: 25px;
-        line-height: 49px;
-        color: #312A50;
     }
         
         .smflx-photo-gallery-text >h5{
@@ -303,8 +348,7 @@ height: 118.13706970214844px;
         
         }
     
-    
-        .photo-gallery-container{
+     .hero--container--transcript{
             background: #E7FFF1;
             padding: 10px;
             width: 100%;
@@ -314,6 +358,7 @@ height: 118.13706970214844px;
         
         }
     
+       
     
     
     
@@ -360,7 +405,7 @@ height: 118.13706970214844px;
     
             /* or 36px */
             text-align: center;
-            color: #FFFFFF;
+          
             }
     
     
