@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var transcriptItems = document.querySelectorAll('.transcript-by-pastors-container');
   
     // Add click event listener to the search image
-    var searchImage = document.querySelector('.search-container img');
+    var searchImage = document.querySelector('.search-container .fa-search');
     searchImage.addEventListener('click', function() {
       // Get the search term from the input
       var searchTerm = searchInput.value.trim().toLowerCase();
