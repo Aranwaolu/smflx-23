@@ -320,6 +320,7 @@ margin-top: 4px;
 		background-size: cover;
 		background-repeat: no-repeat;
 		font-style: normal;
+		
 	}
 	.hero--container--transcript >h4{
 		font-family: 'Clash Display';
@@ -333,7 +334,7 @@ margin-top: 4px;
 		color: #FFFFFF;
 		}
         .hero--container--transcript >p{
-            width: 70%;
+            width: 60%;
             margin: 1px auto;
             font-family: 'Sofia Pro';
             font-style: normal;
@@ -418,12 +419,9 @@ margin-top: 4px;
 		margin-bottom: 1em;
 	}
 	.fa-bars{
-		height: 15.79166603088379px;
-		width: 15.79166603088379px;
+		
 		border-radius: 0px;
 		position: absolute;
-		margin-top: 11px;
-		margin-left: 10px;
 		cursor: pointer;
 	}
 	.search-container select{
@@ -524,7 +522,7 @@ margin-top: 4px;
 			}
 			.download-transcript{
 				width: 130px;
-				height: 20.34px;
+				height: 22.34px;
 				background: #FFFFFF;
 				border: 0.541806px solid rgba(49, 42, 80, 0.24);
 				border-radius: 1.62542px;
