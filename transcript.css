@@ -440,6 +440,16 @@ margin-top: 4px;
 		color: #423971;
 		margin-bottom: 10px;
 	}
+	.fa-search{
+		height: 20.79166603088379px;
+		width: 20.79166603088379px;
+		border-radius: 0px;
+		position: absolute;
+		margin-top: 16px;
+		margin-left: 13px;
+		cursor: pointer;
+		color: #E7E7E7;
+	}
 	.transcript-by-pastors{
 		display: block;
 		/* grid-template-columns: repeat(2, 1fr); */
