@@ -365,7 +365,7 @@ margin-top: 4px;
 }
 @media(max-width:500px) {
 	.hero--container--transcript{
-		width: 102%;
+		width: 101%;
 		height: 70vh;
 		display: flex;
 		flex-direction: column;
@@ -378,6 +378,7 @@ margin-top: 4px;
 		background-repeat: no-repeat;
 		font-style: normal;
 		color: #ffffff;
+		padding: 0px 12px;
 		/* position: relative; */
 		/* overflow: hidden; */
 	}
@@ -543,8 +544,8 @@ margin-top: 4px;
 			}
 			.message-transcript{
 				background: #E7FFF1;
-				padding: 20px 14px;
-				width: 102%;
+				padding: 20px 15px;
+				width: 101%;
 				
 				}
 				.navigation-button{
