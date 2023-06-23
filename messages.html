@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <link rel="stylesheet" href="./quicklinks.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./quicklinks.css">
     <link rel="stylesheet" href="./messages.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
                     <a href="#">Photo Gallery</a>
                 </li>
                 <li class="navbarlist">
-                    <a href="./messages.html">Messages</a>
+                    <a href="#">Messages</a>
                 </li>
                 <li class="navbarlist">
                     <a href="#">Transcripts</a>
@@ -47,7 +47,7 @@
                         <a href="./index.html">Home</a>
                     </li>
                     <li class="mobileNavbarList">
-                        <a href="./messages.html">Messages</a>
+                        <a href="#">Messages</a>
                     </li>
                     <li class="mobileNavbarList">
                         <a href="#">Photo Gallery</a>
@@ -75,16 +75,16 @@
             <h1>SMFLX Audio Messages</h1>
             <div class="search-col">
                 <img src="./assets/images/search-icon.png" alt="Search icon" class="search-icon">
-                <input type="text" name="search" id="search" placeholder="Search by Topic and Name" class="input">
+                <input type="text" name="search" id="search" placeholder="Search by Topic" class="input">
                 <select name="yearFilter" id="yearFilter" class="select1">
-                    <option value="">All</option>
+                    <!-- <option value="">All Year</option> -->
                     <option value="2023">Year 2023</option>
                     <option value="2022">Year 2022</option>
                     <option value="2021">Year 2021</option>
                     <option value="2020">Year 2020</option>
                 </select>
                 <select name="pastorsList" id="pastorsList" class="select2">
-                    <option value="">All</option>
+                    <option value="">Minister Name</option>
                     <option value="Pastor Thompson Ehima">Pastor Thompson Ehima</option>
                     <option value="Pastor Emeka">Pastor Emeka</option>
                     <option value="Pastor Tosin">Pastor Tosin</option>
@@ -115,6 +115,21 @@
                 </div> 
 
                 
+            </div>
+
+            <!-- Pagination  -->
+
+            <div class="next-page">
+                <div class="navigation-button prev"><button><</button></div>
+                <div class="navigation-button"><button>1</button></div>
+                <div class="navigation-button"><button>2</button></div>
+                <div class="navigation-button"><button>3</button></div>
+                <div class="navigation-button"><button>4</button></div>
+                <div class="navigation-button"><button>5</button></div>
+                <div class="navigation-button"><button>...</button></div>
+                <div class="navigation-button"><button>9</button></div>
+                <div class="navigation-button"><button>10</button></div>
+                <div class="navigation-button next"><button>></button></div>
             </div>
         </div>
 

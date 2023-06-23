@@ -3,16 +3,16 @@
 @import url('/assets/fonts/sofia-pro/css/sofia-pro.css');
 @import url(./);
 
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
+} */
 
  /* NAV  */
-
+/* 
 .smflx-logo-holder{
     width: 50%;
 }
@@ -40,15 +40,14 @@
 .navbar .burger-menu{
     display: none;
 }
-.navbarlists a{
-    font-size: 1.13rem;
-    color: #423971;
-    /* font-family: 'Sofia Pro' sans-serif; */
-    font-family: 'SofiaProRegular', sans-serif;
-}
 .navbar .mobileNavMenu{
     display: none;
 }
+.navbarlists a{
+    font-size: 1.13rem;
+    color: #423971;
+    font-family: 'SofiaProRegular', sans-serif;
+} */
 .quicklinks-container{
     width: 100%;
     height: auto;
@@ -101,7 +100,7 @@
 
 
 @media (max-width: 43.75rem) {
-    
+/*     
     .navbar{
         padding: 0 22.5px;
         width: 100%;
@@ -156,11 +155,8 @@
         justify-content: space-around;
         align-items: center;
     }
-    /* .navbar .mobileNavMenu .mobileNavbarList a{
-        color: 20rem;
-
-    } */
-    .navbar .mobileNavMenu a{
+   
+     .navbar .mobileNavMenu a{
         color: white;
         font-size: 30px !important;
         font-family: 'Clash Display' sans-serif;
@@ -177,7 +173,7 @@
     .navbar .mobileNavMenu .close img{
         font-size: 1.29rem;
         font-family: 500;
-    }
+    }  */
     .quicklinks-container{
         width: 100%;
         height: auto;

@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('./assets/fonts/clash-display/css/clash-display.css');
 @import url('./assets/fonts/sofia-pro/css/sofia-pro.css');
-
+  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
 .desktop-view--container {
 	display: none;
 }
@@ -25,6 +32,21 @@
 /* width: 102px; */
 /* } */
 
+
+
+.navbar {
+	position: sticky;
+	top: 0;
+	/* padding: 4rem 4rem 6rem 6rem; */
+	padding: 0 4rem;
+	width: 100%;
+	height: 6.81rem;
+	background-color: #ffffff;
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+	z-index: 999;
+}
 .smflx-logo-holder {
 	width: 50%;
 }
@@ -34,21 +56,19 @@
 	height: 4.63rem;
 }
 
-.navbar {
-	padding: 0 6rem;
-
-	width: 100%;
-	height: 6.81rem;
-	background-color: #ffffff;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
 .navbarlists {
 	width: 50%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: end;
+	gap: 2em;
+	font-family: 'Sofia Pro';
+	
+	
+}
+.navbarlists .navbarlist{
+	/* margin-left: auto ;
+	margin: 0;
+	padding: 0; */
 }
 
 .navbar .burger-menu {
@@ -56,7 +76,7 @@
 }
 
 .navbarlists a {
-	font-size: 2rem;
+	font-size: 1.5rem !important;
 	color: #423971;
 }
 
@@ -85,7 +105,7 @@
 .nav--container > img {
 	height: 53px;
 	width: 102px;
-} */
+} 
 
 
  /* NAV  */
@@ -175,11 +195,6 @@
 		align-items: center;
 	}
 
-	/* .navbar .mobileNavMenu .mobileNavbarList a{
-
-        color: 20rem;
-
-    } */
 
 	.navbar .mobileNavMenu a {
 		color: white;
@@ -200,7 +215,7 @@
 		font-size: 2.6rem;
 		font-family: 500;
 	}
-
+}
 
 
 /* HERO */

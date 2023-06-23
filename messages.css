@@ -180,6 +180,60 @@ div.breadcrumb-para1{
     margin-top: 19px;
 }
 
+/* Pagination  */
+
+
+.next-page {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 45px;
+}
+.navigation-button {
+	height: 40.979591369628906px;
+	width: 40.979591369628906px;
+	text-align: center;
+	align-items: center;
+	margin: 7px;
+	margin-top: 20px;
+	border-radius: 5.122448921203613px;
+	box-sizing: border-box;
+	background: #ffffff;
+	border: 1.28061px solid #4200ff;
+	border-radius: 5.12245px;
+}
+.navigation-button button {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17.9286px;
+	line-height: 26px;
+	/* or 143% */
+	text-align: center;
+	/* Dark Grey / 400 */
+	color: #212b36;
+	margin-top: 4px;
+}
+.prev {
+	background: #919eab;
+	opacity: 0.5;
+	border-radius: 5.12245px;
+	font-weight: bold;
+}
+
+.prev button {
+	color: #ffffff;
+}
+
+.next {
+	background: #919eab;
+	opacity: 0.5;
+	border-radius: 5.12245px;
+	color: #ffffff;
+}
+.next button {
+	color: #ffffff;
+}
+
 @media (max-width: 43.75rem) {
     .breadcrumb{
         width: 100%;
@@ -248,6 +302,8 @@ div.breadcrumb-para1{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
 
     }
     .input{
@@ -276,19 +332,16 @@ div.breadcrumb-para1{
         cursor: pointer;
     }
     .select1{
-        width: 50%;
+        width: 45%;
         height: 55px;
         border-radius: 4px;
         border: 1px solid #E7E7E7;
-        padding-right: 0.5rem;
-        /* padding: 0 4rem; */
     }
     .select2{
-        width: 50%;
+        width: 45%;
         height: 55px;
         border-radius: 4px;
         border: 1px solid #E7E7E7;
-        padding-left: 0.5rem;
     }
     .messages-gallery-container{
         width: 100%;
@@ -379,4 +432,37 @@ div.breadcrumb-para1{
         gap: 10px;
         margin-top: 19px;
     }
+
+    /* Pagination  */
+
+    .next-page {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		justify-content: center;
+		padding: 20px;
+	}
+	.navigation-button {
+		height: 33.979591369628906px;
+		width: 30.979591369628906px;
+		text-align: center;
+		align-items: center;
+
+		margin-top: px;
+		border-radius: 5.122448921203;
+		box-sizing: border-box;
+		background: #ffffff;
+		border: 1.28061px solid #420;
+		border-radius: 5.12245px;
+	}
+	.navigation-button button {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17.9286px;
+		line-height: 26px;
+		/* or 143% */
+		text-align: center;
+		/* Dark Grey / 400 */
+		color: #212b36;
+		margin-top: 4px;
+	}
 }
