@@ -4,165 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messageplayer</title>
-    <link rel="stylesheet" href="./assets/resources/fontawesome-free-5.15.4-web/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./quicklinks.css">
+    <link rel="stylesheet" href="./messagesplayer.css">
 
-    <style>
-        .messageplayer-container{
-            width: 100%;
-            height: auto;
-            background-image: url(./assets/images/messageplayer-bg.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 5rem;
-        }
-        .messages-gallery-container-col{
-            width: 80%;
-            height: auto;
-            color: white;
-            align-self: center;
-            
-        }
-        .baseContainer{
-            width: 100%;
-            /* height: 50%; */
-            height: 578px;
-            position: relative;
-        }
-        .img-col{
-            width: 100%;
-            height: 100%;
-            
-        }
-        .messages-gallery-container-col img{
-            width: 100%;
-            height: 100%;
-        }
-       
-        .messages-gallery-container-col .mgc-text-col{
-            width: 100%;
-            height: 100px;
-            position: absolute;
-            bottom: 0;
-            background: transparent;
-            display: flex; 
-            padding: 2rem 2rem 6rem 2rem;
-            background-color: rgba(0, 0, 0, 0.539);
-            
-        }
-        .messages-gallery-container-col .mgc-left{
-            width: 60%;
-        }
-        .messages-gallery-container-col .mgc-right{
-            width: 40%;
-            height: 100%;
-            padding-top: 0.8rem;
-        }
-        .mgc-text-col .mgc-right{
-            /* align-self: center; */
-            display: flex;
-            justify-content: end;
-            gap: 9px;
-        }
-        .mgc-text-col .mgc-right .mgc-btn1{
-            width: 120.96px;
-            height: 31.55px;
-            display: flex;
-            padding: 9.0155px 22.5387px;
-            border-radius: 3.75646px;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 10.5181px;
-            transition: 0.5s;
-        }
-        .mgc-text-col .mgc-right .mgc-btn1:link{
-            background-color: white;
-            color: black;
-        }
-        .mgc-text-col .mgc-right .mgc-btn1:visited{
-            background-color: white;
-            color: black;
-        }
-       
-        .mgc-text-col .mgc-right .mgc-btn2{
-            width: 128px;
-            height: 32px;
-            padding: 9.0155px 22.5387px;
-            border-radius: 3.75646px;
-            /* background: rgba(255, 255, 255, 0.1); */
-            background-color: white;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            color: black;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 10.5181px;
-            transition: 0.5s;
-        }
-        .mgc-text-col .mgc-right .mgc-btn1:hover{
-            background: gray;
-            color: white;
-        }
-        .mgc-text-col .mgc-right .mgc-btn2:hover{
-            background: gray;
-            color: white;
-        }
-        .audio-col{
-            width: 100%;
-            background-color: #12121E;
-        }
-        .audio-col audio{
-            width: 100%;
-            
-        }
-        #audio::-webkit-media-controls-enclosure{
-            border-radius: 0;
-        }
-        .arrowDownload{
-            text-align: end;
-            color: white;
-        }
-        .program{
-            font-family: 'Sofia Pro' sans-serif;
-            font-weight: 700;
-            font-size: 16px;
-            
-        }
-        .mgc-title{
-            font-size: 16px;
-            font-family: 'Sofia Pro' sans-serif;
-            font-weight: 400;
-            line-height: 24px;
-            color: #FFFFFF82;
-            padding-bottom: 0.5rem;
-        }
-        .messageTopic{
-            font-family: 'Clash Display' sans-serif;
-            font-size: 18px;
-            line-height: 22.14px;
-            padding-bottom: 0.5rem;
-        }
-        /* .back-btn-col{
-            width: 80%;
-            display: flex;
-            background-color: lightblue;
-            height: 20vh;
-            padding-left: 12.3rem;
-            align-items: flex-end;
-        } */
-       
-        
-       
-
-    </style>
+   
 </head>
 <body onload="LoadData()">
     
@@ -262,6 +111,7 @@
             </div>
         </footer>
     </main>
+    <script src="./quicklinks.js"></script>
     <script src="./messgesGetData.js"></script>
 </body>
 </html>

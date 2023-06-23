@@ -96,12 +96,11 @@ div.breadcrumb-para1{
     width: 100%;
     display: flex;
     flex-flow: wrap;
-    justify-content: center;
-    gap: 26px;
-    margin: 2rem 0;
+    justify-content: space-between;
+    gap: 30px;
 }
  .messages-gallery-container .messages-gallery-container-col{
-    width: 40%;
+    width: 48.5%;
     /* height: 21.85rem; */
     height: auto;
     background-color: white;
@@ -148,27 +147,27 @@ div.breadcrumb-para1{
 }
 .mgc-text-col .mgc-btn1{
     background-color: #C82127;
+    border: 1px solid rgba(49, 42, 80, 1);
+    color: white;
     width: 172px;
     height: 56px;
     border-radius: 3px;
-    border: 1px solid #C82127;
-    color: white;
     cursor: pointer;
     transition: 0.5s;
 }
 .mgc-text-col .mgc-btn2{
-    background-color: white;
+    background-color: #C82127;
+    border: 1px solid rgba(49, 42, 80, 1);
+    color: white;
     width: 175px;
     height: 56px;
     border-radius: 3px;
-    border: 1px solid rgba(49, 42, 80, 0.24);
-    color: black;
     cursor: pointer;
     transition: 0.5s;
 }
 .mgc-text-col .mgc-btn1:hover{
-    color: black;
-    background-color: transparent;
+    color: #312A50;
+    background-color: rgba(49, 42, 80, 0.24);
 }
 .mgc-text-col .mgc-btn2:hover{
     color: #312A50;
@@ -179,4 +178,205 @@ div.breadcrumb-para1{
     display: flex;
     gap: 10px;
     margin-top: 19px;
+}
+
+@media (max-width: 43.75rem) {
+    .breadcrumb{
+        width: 100%;
+        height: 26.94rem;
+        background-image: url(./assets/images/msg-mob-bg.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .breadcrumb-text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        /* text-align: center; */
+        /* padding: 0 1rem; */
+        padding: 0 1rem 90px 1rem;
+    }
+    .breadcrumb-heading{
+        /* width: 700px; */
+        color: white;
+        font-weight: 400;
+        font-size: 24px;
+        font-family: 'Clash Display', sans-serif;
+        text-align: center;
+        padding: 0 3rem;
+    }
+    .mt1{
+        color: white;
+        display: inline;
+        font-weight: 900;
+        
+    }
+    .mt2{
+        color: #F47B20;
+    }
+    div.breadcrumb-para1{
+        width: 20.32rem;
+        font-size: 14px;
+        margin-top: 30px;
+        font-weight: 300;
+        font-family: 'Sofia Pro', sans-serif;
+        line-height: 21px;
+        text-align: center;
+    }
+    
+    /* Messages Gallery  */
+    .messages-gallery{
+        width: 100%;
+        height: auto;
+        background-color: #E7FFFA;
+        padding: 53px;
+        font-family: 'ClashDisplay-Medium', sans-serif;
+    }
+    .messages-gallery h1{
+        width: 100%;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+        /* background-color: red;
+        font-family: 'Clash Display'; */
+    }
+    .messages-gallery .search-col{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .input{
+        width: 100%;
+        height: 55px;
+        border: 1px solid #E7E7E7;
+        border-radius: 4px;
+    }
+    .messages-gallery .input::placeholder{
+        margin-left: 4rem;
+        color: #42397147;
+        padding-left: 2.5rem;
+        font-family: 'Sofia Pro' sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+    
+    }
+    .messages-gallery .search-icon{
+        height: 19.79px;
+        width: 19.79px;
+        border-radius: 0px;
+        position: absolute;
+        margin-top: 17px;
+        margin-left: 13px;
+        cursor: pointer;
+    }
+    .select1{
+        width: 50%;
+        height: 55px;
+        border-radius: 4px;
+        border: 1px solid #E7E7E7;
+        padding-right: 0.5rem;
+        /* padding: 0 4rem; */
+    }
+    .select2{
+        width: 50%;
+        height: 55px;
+        border-radius: 4px;
+        border: 1px solid #E7E7E7;
+        padding-left: 0.5rem;
+    }
+    .messages-gallery-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        /* margin: 2rem 0; */
+    }
+     .messages-gallery-container .messages-gallery-container-col{
+        width: 100%;
+        /* height: 23.67em; */
+        height: auto;
+        background-color: white;
+        border-radius: 11px;
+        overflow: hidden;
+     }
+     .messages-gallery-container-col .img-col{
+        width: 100%;
+        height: 218.89px;
+        height: auto;
+     }
+     .messages-gallery-container .messages-gallery-container-col img{
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        /* aspect-ratio: 4/2; */
+        
+        
+     }
+     .messages-gallery-container-col .mgc-text-col{
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        margin: 0;
+        /* padding: 20.5px 53px 65px 53px; */
+    }
+    .mgc-text-col h3{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .mgc-text-col .mgc-title{
+        font-family: 'Sofia Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #C82127;
+    }
+    .mgc-text-col .program{
+        font-family: 'Sofia Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #423971;
+    }
+    .mgc-text-col .mgc-btn1{
+        background-color: #C82127;
+        border: 1px solid rgba(49, 42, 80, 1);
+        color: white;
+        width: 93px;
+        height: 30px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .mgc-text-col .mgc-btn2{
+        background-color: #C82127;
+        border: 1px solid rgba(49, 42, 80, 1);
+        color: white;
+        width: 157px;
+        height: 30px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .mgc-text-col .mgc-btn1:hover{
+        background-color: transparent;
+        color: black;
+    }
+    .mgc-text-col .mgc-btn2:hover{
+        background-color: transparent;
+        color: black;
+    }
+    .mgc-text-col .btn-col{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        margin-top: 19px;
+    }
 }
