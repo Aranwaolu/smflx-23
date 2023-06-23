@@ -590,10 +590,10 @@ margin-top: 4px;
 						.next button{
 							color: #FFFFFF;
 						}
-											}
-										@media(max-width:768px) {
-										.navbarlists a{
-											font-size: 1.6rem;
-											color: #423971;
-										}
-										}
+							}
+						@media(max-width:768px) {
+						.navbarlists a{
+							font-size: 1.6rem;
+							color: #464357;
+						}
+						}
