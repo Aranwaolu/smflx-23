@@ -13,47 +13,22 @@
 	display: none;
 }
 
-/* NAV */
-/* .nav--container { */
-/* position: sticky; */
-/* top: 0; */
-/* width: 100%; */
-/* height: 110px; */
-/* background: #ffffff; */
-/* padding: 30px 24px; */
-/* display: flex; */
-/* flex-direction: row; */
-/* justify-content: flex-start; */
-/* z-index: 100; */
-/* } */
+.navbar{
+    padding: 0 4rem;
+    width: 100%;
+    height: 6.81rem;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-/* .nav--container > img { */
-/* height: 53px; */
-/* width: 102px; */
-/* } */
-
-
-
-.navbar {
-	position: sticky;
-	top: 0;
-	/* padding: 4rem 4rem 6rem 6rem; */
-	padding: 0 4rem;
-	width: 100%;
-	height: 6.81rem;
-	background-color: #ffffff;
-	display: flex;
-	/* justify-content: space-between; */
-	align-items: center;
-	z-index: 999;
 }
-.smflx-logo-holder {
-	width: 50%;
+.smflx-logo-holder{
+    width: 50%;
 }
-
-.smflx-logo img {
-	width: 8.95rem;
-	height: 4.63rem;
+.smflx-logo img{
+    width: 8.95rem;
+    height: 4.63rem;
 }
 
 .navbarlists {
@@ -62,8 +37,7 @@
 	justify-content: end;
 	gap: 2em;
 	font-family: 'Sofia Pro';
-	
-	
+
 }
 
 
@@ -74,6 +48,9 @@
 .navbarlists a {
 	font-size: 1.5rem !important;
 	color: #423971;
+	line-height: 27px;
+    font-family: 'SofiaProRegular', sans-serif;
+	font-weight: 500;
 }
 
 /* Note: backdrop-filter has minimal browser support */
@@ -82,7 +59,12 @@
 	display: none;
 }
 @media (max-width: 43.75rem) {
+	
+ /* NAV  */
 	.navbar {
+		/* position: fixed;
+		top: 0;
+		z-index: 333; */
 		padding: 0 1.38rem;
 		width: 100%;
 		height: 6.81rem;
@@ -92,20 +74,6 @@
 		align-items: center;
 	}
 
-	.smflx-logo img {
-		width: 8.95rem;
-		height: 3.29rem;
-	}
-
-
-.nav--container > img {
-	height: 53px;
-	width: 102px;
-} 
-
-
- /* NAV  */
-
  .smflx-logo-holder{
     width: 50%;
 }
@@ -113,43 +81,14 @@
     width: 8.95rem;
     height: 4.63rem;
 }
-.navbar{
-    padding: 0 6rem;
-    width: 100%;
-    height: 109px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
+.navbar .navbarlists{
+	display: none;
 }
-.navbarlists{
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    gap: 3.13rem;
-    
-}
+
 .navbar .burger-menu{
-    display: none;
+    display: block;
 }
-.navbarlists a{
-    color: #423971;
-	line-height: 27px;
-	font-size: 18px;
-    font-family: 'SofiaProRegular', sans-serif;
-	font-weight: 500;
-}
-.navbar .mobileNavMenu{
-    display: none;
-  }
-	.navbar .navbarlists {
-		display: none;
-	}
-
-	.navbar .burger-menu {
-		display: block;
-	}
 
 	.navbar .burger-menu .bar {
 		font-size: 2.6rem !important;
@@ -166,36 +105,27 @@
 		color: white;
 		padding: 0;
 		margin: 0;
-		z-index: 999;
+		/* z-index: 999; */
 		transform: translateX(-200%);
 		transition: 1s;
 	}
 
 	.open {
 		transform: translateX(0%) !important;
-		position: fixed !important;
-		top: 0;
 	}
-
-	.navbar .mobileNavMenu .mobileNavbarLists {
-		width: 100%;
-
-		height: 80%;
-
-		display: flex;
-
-		flex-direction: column;
-
-		justify-content: space-around;
-
-		align-items: center;
-	}
-
-
+	.navbar .mobileNavMenu .mobileNavbarLists{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 	.navbar .mobileNavMenu a {
 		color: white;
 		font-size: 1.88rem;
 		font-weight: 700;
+		font-family: 'Clash Display' sans-serif;
 	}
 
 	.navbar .mobileNavMenu .close {
@@ -207,7 +137,7 @@
 		padding: 0 4rem;
 	}
 
-	.navbar .mobileNavMenu .close i {
+	.navbar .mobileNavMenu .close img {
 		font-size: 2.6rem;
 		font-family: 500;
 	}
@@ -217,7 +147,7 @@
 /* HERO */
 .hero--container {
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	background: orange;
 	display: flex;
 	flex-direction: column;
@@ -227,7 +157,8 @@
 	/* background-image: url('./assets/images/page-new-hero-mobile.png'); */
 	background-image: url('./assets/images/page-new-hero-mobile.png');
 	background-position: bottom center;
-	background-size: cover;
+	background-size: 100% 100%;
+	/* background-size: cover; */
 	background-repeat: no-repeat;
 	font-style: normal;
 	color: #ffffff;
@@ -1428,7 +1359,7 @@ a.register-btn--red {
         color: white;
         padding: 0;
         margin: 0;
-        z-index: 999;
+        z-index: 99999999 !important;
         font-family: 'ClashDisplay-Medium', sans-serif;
         transform: translateX(-200%);
         transition: 1s;
@@ -1437,6 +1368,8 @@ a.register-btn--red {
         transform: translateX(0%) !important;
     }
     .navbar .mobileNavMenu .mobileNavbarLists{
+		position: relative;
+		z-index: 99999999 !important;
         width: 100%;
         height: 80%;
         display: flex;

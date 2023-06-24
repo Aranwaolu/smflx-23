@@ -1,10 +1,45 @@
-
-.messageplayer-container{
+.messagesplayer-grid{
     width: 100%;
     height: auto;
     background-image: url(./assets/images/messageplayer-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.messagesplayer-grid .backBtn{
+    width: 40%;
+    position: relative;
+    left: 18%;
+    bottom: -40px;
+    z-index: 55;
+    margin-top: 2rem;
+}
+.messagesplayer-grid .backBtn a{
+    display: inline-block;
+    width: 70%;
+    height: 59px;
+    font-size: 16px;
+    font-family: 'Clash Display' sans-serif;
+    font-weight: 400;
+    padding: 1.2rem 0.8rem 0;
+    /* padding: 20px, 134px, 20px, 134px; */
+    border-radius: 3px;
+    border: 1px solid rgba(49, 42, 80, 0.24);
+    color: rgba(49, 42, 80, 1);
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+.messagesplayer-grid .backBtn a:hover{
+    background: gray;
+         color: white;
+
+}
+.messageplayer-container{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -149,6 +184,45 @@
 } */
 
 @media (max-width: 43.75rem) {
+    .messagesplayer-grid{
+        width: 100%;
+        height: auto;
+        background-image: url(./assets/images/messageplayer-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .messagesplayer-grid .backBtn{
+        width: 100%;
+        position: relative;
+        left: 6%;
+        bottom: -0px;
+        z-index: 55;
+        margin-top: 2rem;
+    }
+    .messagesplayer-grid .backBtn a{
+        display: inline-block;
+        width: 90%;
+        height: 59px;
+        font-size: 16px;
+        font-family: 'Clash Display' sans-serif;
+        font-weight: 400;
+        padding: 1.2rem 0.8rem 0;
+        /* padding: 20px, 134px, 20px, 134px; */
+        border-radius: 3px;
+        border: 1px solid rgba(49, 42, 80, 0.24);
+        color: rgba(49, 42, 80, 1);
+        background-color: white;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .messagesplayer-grid .backBtn a:hover{
+        background: gray;
+             color: white;
+    
+    }
     .messageplayer-container{
         width: 100%;
         height: auto;
