@@ -1566,14 +1566,14 @@ padding: 80px 40px;
 	background-size: cover;
 	background-position:bottom;
 	background-repeat: no-repeat;
-	padding: 80px 40px;
+	padding: 80px 10px;
 	
 	}
 	.accommodation--ended{
-		width: 100%;
+		width: 400px;
 		margin: 0px auto;
 		height: 329px;
-		padding:95px 50px;
+		padding:95px 10px;
 		border-radius: 9px;
 		border: 1px solid #FFFFFF70;
 		background-color: #ffffff4d;
@@ -1581,13 +1581,13 @@ padding: 80px 40px;
 	
 	}
 	.accommodation--ended >h5{
-		width: 480px;
+		width: 200px;
 		margin: 0px auto;
 		height: 29px;
 		font-family:' Clash Display';
 		font-size: 30px;
 		font-weight: 600;
-		line-height: 59px;
+		line-height: 28px;
 		letter-spacing: 0.045em;
 		text-align: center;
 		color: #d6d3d3;
@@ -1598,7 +1598,7 @@ padding: 80px 40px;
 		font-family: 'Clash Display';
 		font-size: 25px;
 		font-weight: 500;
-		line-height: 49px;
+		line-height: 0px;
 		letter-spacing: 0.045em;
 		text-align: center;
 		color: #FFFFFF;
@@ -1608,7 +1608,7 @@ padding: 80px 40px;
 		font-family: 'Clash Display';
 		font-size: 29px;
 		font-weight: 600;
-		line-height: 69px;
+		line-height: 170px;
 		letter-spacing: 0.02em;
 		text-align: center;
 		color: #FFFFFF;
@@ -1618,7 +1618,7 @@ padding: 80px 40px;
 		font-family: 'Clash Display';
 		font-size:30px;
 		font-weight: 700;
-		line-height: 69px;
+		line-height: 6px;
 		letter-spacing: 0.02em;
 		text-align: center;
 		color: #FFC42B;
@@ -1637,10 +1637,10 @@ padding: 80px 40px;
 		
 		}
 		.meal-ended{
-			width: 100%;
+			width: 400px;
 			margin: 0px auto;
 			height: 329px;
-			padding:95px 50px;
+			padding:95px 10px;
 			border-radius: 9px;
 			border: 1px solid #FFFFFF70;
 			background-color: #ffffff28;
@@ -1648,7 +1648,7 @@ padding: 80px 40px;
 		
 		}
 		.meal-ended >h5{
-			width: 480px;
+			width: 100%;
 			margin: 0px auto;
 			height: 39px;
 			font-family:' Clash Display';
