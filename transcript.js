@@ -1,6 +1,7 @@
-// Mobile Navbar functions 
+// Mobile Navbar functions
 const mobileMenuEl = document.querySelector('.mobileNavMenu')
 const openEl = document.querySelector('.burger-menu')
+
 const closeEl = document.querySelector('.close')
 openEl.addEventListener('click', ()=>{
     mobileMenuEl.classList.toggle("open");
@@ -9,6 +10,7 @@ closeEl.addEventListener('click', ()=>{
     mobileMenuEl.classList.remove("open");
 })
 // Wait for the DOM to be fully loaded
+
 document.addEventListener('DOMContentLoaded', function() {
     // Get the search input element
     var searchInput = document.getElementById('search-input');
@@ -63,6 +65,21 @@ yearSelect.addEventListener('change', function () {
 });
 
 
+	// Loop through all the transcript containers
+	transcriptContainers.forEach(function (container) {
+		// Get the year from the transcript container
+		const transcriptYear = container.querySelector('p span').textContent
+
+		// Check if the transcript year matches the selected year
+		if (transcriptYear.includes(selectedYear)) {
+			// Show the transcript container
+			container.style.display = 'block'
+		} else {
+			// Hide the transcript container
+			container.style.display = 'none'
+		}
+	})
+})
 
 document.addEventListener('DOMContentLoaded', function() {
   // Get all the navigation buttons
@@ -81,3 +98,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+

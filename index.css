@@ -6,275 +6,155 @@
 	display: none;
 }
 
-*{
 
+/* NAV */
+/* .nav--container { */
+/* position: sticky; */
+/* top: 0; */
+/* width: 100%; */
+/* height: 110px; */
+/* background: #ffffff; */
+/* padding: 30px 24px; */
+/* display: flex; */
+/* flex-direction: row; */
+/* justify-content: flex-start; */
+/* z-index: 100; */
+/* } */
 
+/* .nav--container > img { */
+/* height: 53px; */
+/* width: 102px; */
+/* } */
 
-    padding: 0;
-
-
-
-    margin: 0;
-
-
-
-    box-sizing: border-box;
-
-
-
-    text-decoration: none;
-
-
-
-    list-style: none;
-
-
-
+.smflx-logo-holder {
+	width: 50%;
 }
 
-
-
-.smflx-logo-holder{
-
-
-
-    width: 50%;
+.smflx-logo img {
+	width: 8.95rem;
+	height: 4.63rem;
 }
 
-.smflx-logo img{
-
-    width: 8.95rem;
-    height: 4.63rem;
+.navbar {
+	padding: 0 6rem;
+	width: 100%;
+	height: 6.81rem;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-
-
-.navbar{
-    padding: 0 6rem;
-    width: 100%;
-    height: 6.81rem;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbarlists {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
 }
 
-.navbarlists{
-
-
-
-    width: 50%;
-
-
-
-    display: flex;
-
-
-
-    justify-content: space-between;
-
-
-
-    
-
-
-
+.navbar .burger-menu {
+	display: none;
 }
 
-
-
-.navbar .burger-menu{
-
-
-
-    display: none;
-
-
-
+.navbarlists a {
+	font-size: 2rem;
+	color: #423971;
 }
-
-
-
-.navbarlists a{
-
-
-
-    font-size: 2rem;
-
-
-
-    color: #423971;
-	
-
-
-
-}
-
-
 
 /* Note: backdrop-filter has minimal browser support */
 
-
-
-.navbar .mobileNavMenu{
-
-
-
-    display: none;
-
-
-
+.navbar .mobileNavMenu {
+	display: none;
 }
 @media (max-width: 43.75rem) {
+	.navbar {
+		padding: 0 1.38rem;
+		width: 100%;
+		height: 6.81rem;
+		background-color: #ffffff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-    
+	.smflx-logo img {
+		width: 8.95rem;
+		height: 3.29rem;
+	}
 
-    .navbar{
+	.navbar .navbarlists {
+		display: none;
+	}
 
-        padding: 0 1.38rem;
+	.navbar .burger-menu {
+		display: block;
+	}
 
-        width: 100%;
+	.navbar .burger-menu .bar {
+		font-size: 2.6rem !important;
+	}
 
-        height: 6.81rem;
+	.navbar .mobileNavMenu {
+		width: 100%;
+		height: 100%;
+		background: #05052e;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		color: white;
+		padding: 0;
+		margin: 0;
+		z-index: 999;
+		transform: translateX(-200%);
+		transition: 1s;
+	}
 
-        background-color: #FFFFFF;
+	.open {
+		transform: translateX(0%) !important;
+		position: fixed !important;
+		top: 0;
+	}
 
-        display: flex;
+	.navbar .mobileNavMenu .mobileNavbarLists {
+		width: 100%;
 
-        justify-content: space-between;
+		height: 80%;
 
-        align-items: center;
+		display: flex;
 
-    
+		flex-direction: column;
 
-    }
+		justify-content: space-around;
 
-    
+		align-items: center;
+	}
 
-    
-
-    .smflx-logo img{
-
-        width: 8.95rem;
-
-        height: 3.29rem;
-
-    }
-
-    .navbar .navbarlists{
-
-        display: none;
-
-    }
-
-    
-
-    .navbar .burger-menu{
-
-        display: block;
-
-    }
-
-    .navbar .burger-menu .bar{
-
-        font-size: 1.4rem;
-
-    }
-
-    .navbar .mobileNavMenu{
-
-        width: 100%;
-
-        height: 100%;
-
-        background: #05052E;
-
-        display: block;
-
-        position: absolute;
-
-        left: 0;
-
-        top: 0;
-
-        color: white;
-
-        padding: 0;
-
-        margin: 0;
-
-        z-index: 999;
-
-        transform: translateX(-200%);
-
-        transition: 1s;
-
-    }
-
-    .open{
-
-        transform: translateX(0%) !important;
-
-    }
-
-    .navbar .mobileNavMenu .mobileNavbarLists{
-
-        width: 100%;
-
-        height: 80%;
-
-        display: flex;
-
-        flex-direction: column;
-
-        justify-content: space-around;
-
-        align-items: center;
-
-    }
-
-    /* .navbar .mobileNavMenu .mobileNavbarList a{
+	/* .navbar .mobileNavMenu .mobileNavbarList a{
 
         color: 20rem;
 
     } */
 
-    .navbar .mobileNavMenu a{
+	.navbar .mobileNavMenu a {
+		color: white;
+		font-size: 1.88rem;
+		font-weight: 700;
+	}
 
-        color: white;
+	.navbar .mobileNavMenu .close {
+		width: 100%;
+		height: 10%;
+		display: flex;
+		justify-content: end;
+		align-items: end;
+		padding: 0 4rem;
+	}
 
-        font-size: 1.88rem;
-
-        font-weight: 700;
-
-    }
-
-    .navbar .mobileNavMenu .close{
-
-        width: 100%;
-
-        height: 10%;
-
-        display: flex;
-
-        justify-content: end;
-
-        align-items: end;
-
-        padding: 0 4rem ;
-
-    }
-
-    .navbar .mobileNavMenu .close img{
-
-        font-size: 1.5rem;
-
-        font-family: 500;
-
-    }
-
+	.navbar .mobileNavMenu .close i {
+		font-size: 2.6rem;
+		font-family: 500;
+	}
 }
-
 
 /* HERO */
 .hero--container {
