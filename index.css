@@ -1752,7 +1752,7 @@ padding: 80px 40px;
 		font-weight: 600;
 		line-height: 59px;
 		letter-spacing: 0.02em;
-		text-align: ;
+		text-align: center;
 		color: #FFFFFF;
 		margin-top: 1.8em;
 	}
@@ -1762,7 +1762,7 @@ padding: 80px 40px;
 		font-weight: 700;
 		line-height: 69px;
 		letter-spacing: 0.02em;
-		text-align: ;
+		text-align: center;
 		color: #FFC42B;
 	
 	}
@@ -1783,7 +1783,7 @@ padding: 80px 40px;
 		margin: 0px auto;
 		height: 39px;
 		font-family:' Clash Display';
-		font-size: 23px;
+		font-size: 22px;
 		font-weight: 600;
 		line-height: 35px;
 		letter-spacing: 0.045em;
@@ -1791,7 +1791,7 @@ padding: 80px 40px;
 	}
 	.meal-ended >h5 span{
 		font-family: 'Clash Display';
-		font-size: 20px;
+		font-size: 21px;
 		font-weight: 500;
 		line-height: 9px;
 		letter-spacing: 0.045em;
