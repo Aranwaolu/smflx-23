@@ -19,7 +19,6 @@ slideWE.prepend(lastCloneWE)
 const slideWidthWE = slidesWE[indexWE].clientWidth
 
 slideWE.style.transform = `translateX(${-slideWidthWE * indexWE}px)`
-
 // console.log(slidesWE)
 
 const startSlideWE = () => {
@@ -37,7 +36,6 @@ slideWE.addEventListener('transitionend', () => {
 		indexWE = 1
 		slideWE.style.transform = `translateX(${-slideWidthWE * indexWE}px)`
 	}
-
 	if (slidesWE[indexWE].id === lastCloneWE.id) {
 		slideWE.style.transition = 'none'
 		indexWE = slidesWE.length - 2

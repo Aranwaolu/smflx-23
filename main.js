@@ -3,6 +3,7 @@ const mobileMenuEl = document.querySelector('.mobileNavMenu')
 const openEl = document.querySelector('.burger-menu')
 const closeEl = document.querySelector('.close-menu')
 
+
 openEl.addEventListener('click', () => {
 	mobileMenuEl.classList.toggle('open')
 })
@@ -32,7 +33,6 @@ slide.prepend(lastClone)
 const slideWidth = slides[index].clientWidth
 
 slide.style.transform = `translateX(${-slideWidth * index}px)`
-
 // console.log(slides)
 
 const startSlide = () => {
@@ -50,7 +50,6 @@ slide.addEventListener('transitionend', () => {
 		index = 1
 		slide.style.transform = `translateX(${-slideWidth * index}px)`
 	}
-
 	if (slides[index].id === lastClone.id) {
 		slide.style.transition = 'none'
 		index = slides.length - 2
