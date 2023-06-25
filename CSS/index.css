@@ -28,7 +28,7 @@
     align-items: center;
 }
 .navbarlists{
-    width: 50%;
+    width:100%;
     display: flex;
     justify-content: space-between;
     
@@ -37,15 +37,14 @@
     display: none;
 }
 .navbarlists a{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #423971;
-	
 }
 /* Note: backdrop-filter has minimal browser support */
 .navbar .mobileNavMenu{
     display: none;
 }
-@media (max-width: 43.75rem) {
+@media (max-width:780px) {
     
     .navbar{
         padding: 0 1.38rem;
@@ -57,21 +56,18 @@
         align-items: center;
     
     }
-    
-    
     .smflx-logo img{
         width: 8.95rem;
         height: 3.29rem;
     }
     .navbar .navbarlists{
         display: none;
-    }
-    
+    } 
     .navbar .burger-menu{
         display: block;
     }
     .navbar .burger-menu .bar{
-        font-size: 1.4rem;
+        font-size: 1.09rem;
     }
     .navbar .mobileNavMenu{
         width: 100%;
@@ -97,6 +93,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        margin: 5rem;
         align-items: center;
     }
     /* .navbar .mobileNavMenu .mobileNavbarList a{
@@ -116,7 +113,7 @@
         padding: 0 4rem ;
     }
     .navbar .mobileNavMenu .close img{
-        font-size: 1.5rem;
+        font-size: 1.29rem;
         font-family: 500;
     }
 }
@@ -1687,6 +1684,18 @@ padding: 80px 40px;
 			text-align: center;
 			color: #FFC42B;
 		
+		}
+
+		.footer > h2 {
+			font-family: 'ClashDisplay-SemiBold', sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 22px;
+			text-align: center;
+			color: #05052e;
+			padding: 2em 0em 0em 0em;
+
 		}
 		
 }

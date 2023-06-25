@@ -219,10 +219,10 @@ border-radius:0px 0px  11px 11px;
 }
 .transcript{
 width: 80%;
-height: 120px;
+height: 150px;
 background: #FFFFFF;
 border-radius: 11px;
-padding: 15px;
+padding: 20px;
 }
 .transcript >p{
 
@@ -251,6 +251,7 @@ line-height: 15px;
 text-align: center;
 letter-spacing: 0.045em;
 margin-top: 1em;
+
 color: #312A50;
 /* Inside auto layout */
 
