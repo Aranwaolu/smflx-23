@@ -134,7 +134,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.863);
     text-align: center;
     padding-bottom: 100px;
     /* background-color: red; */
@@ -233,7 +233,7 @@ div.breadcrumb-para1{
  }
  .messages-gallery-container-col .img-col{
     width: 100%;
-    height: 10rem;
+    height: 60vh;
     height: auto;
  }
  .messages-gallery-container .messages-gallery-container-col img{
@@ -246,13 +246,13 @@ div.breadcrumb-para1{
  }
  .messages-gallery-container-col .mgc-text-col{
     width: 100%;
-    height: 15rem;
+    height: 40vh;
     padding: 20.5px 53px 65px 53px;
 }
 .mgc-text-col h3{
     font-weight: 600;
-    font-size: 22px;
-    line-height: 20px;
+    font-size: 21px;
+    line-height: 24px;
 }
 .mgc-text-col .mgc-title{
     font-family: 'Sofia Pro';
@@ -308,57 +308,6 @@ div.breadcrumb-para1{
 /* Pagination  */
 
 
-.next-page {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 45px;
-}
-.navigation-button {
-	height: 40.979591369628906px;
-	width: 40.979591369628906px;
-	text-align: center;
-	align-items: center;
-	margin: 7px;
-	margin-top: 20px;
-	border-radius: 5.122448921203613px;
-	box-sizing: border-box;
-	background-color: #ffffff;
-	border: 1.28061px solid #4200ff;
-	border-radius: 5.12245px;
-}
-.navigation-button  button {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 17.9286px;
-	line-height: 26px;
-	/* or 143% */
-	text-align: center;
-	/* Dark Grey / 400 */
-	/* color: #212b36; */
-	margin-top: 4px;
-}
-.prev {
-	background: #919eab;
-	opacity: 0.5;
-	border-radius: 5.12245px;
-	font-weight: bold;
-   
-}
-
-.prev button {
-	color: #ffffff;
-}
-
-.next {
-	background: #919eab;
-	opacity: 0.5;
-	border-radius: 5.12245px;
-	color: #ffffff;
-}
-.next button {
-	color: #ffffff;
-}
 
 @media (max-width: 43.75rem) {
     .breadcrumb{
@@ -563,36 +512,7 @@ div.breadcrumb-para1{
 
     /* Pagination  */
 
-    .next-page {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		justify-content: center;
-		padding: 20px;
-	}
-	.navigation-button {
-		height: 33.979591369628906px;
-		width: 30.979591369628906px;
-		text-align: center;
-		align-items: center;
-
-		margin-top: px;
-		border-radius: 5.122448921203;
-		box-sizing: border-box;
-		background: #ffffff;
-		border: 1.28061px solid #420;
-		border-radius: 5.12245px;
-	}
-	.navigation-button button {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 17.9286px;
-		line-height: 26px;
-		/* or 143% */
-		text-align: center;
-		/* Dark Grey / 400 */
-		color: #212b36;
-		margin-top: 4px;
-	}
+    
 }
 
 @media (max-width:1024px) {
@@ -619,10 +539,10 @@ div.breadcrumb-para1{
         /* width: 700px; */
         color: white;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 28px;
         font-family: 'Clash Display', sans-serif;
         text-align: center;
-        padding: 0 3rem;
+        padding: 0 6rem;
     }
     .mt1{
         color: white;
@@ -635,11 +555,11 @@ div.breadcrumb-para1{
     }
     div.breadcrumb-para1{
         width: 29.32rem;
-        font-size: 16px;
-        margin-top: 5px;
+        font-size: 23px;
+        margin-top: 10px;
         font-weight: 300;
         font-family: 'Sofia Pro', sans-serif;
-        line-height: 21px;
+        line-height: 25px;
         text-align: center;
     }
     
@@ -764,7 +684,7 @@ div.breadcrumb-para1{
         border: 1px solid rgba(49, 42, 80, 1);
         color: white;
         width: 93px;
-        height: 35px;
+        height: 39px;
         border-radius: 3px;
         cursor: pointer;
         transition: 0.5s;
@@ -773,9 +693,8 @@ div.breadcrumb-para1{
         background:linear-gradient(0deg, #FFFFFF, #FFFFFF);
         border: 1px solid rgba(49, 42, 80, 1);
         color: #312A50;
-        ;
-        width: 157px;
-        height: 35px;
+        width: 200px;
+        height: 39px;
         border-radius: 3px;
         cursor: pointer;
         transition: 0.5s;
@@ -797,36 +716,7 @@ div.breadcrumb-para1{
 
     /* Pagination  */
 
-    .next-page {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		justify-content: center;
-		padding: 20px;
-	}
-	.navigation-button {
-		height: 33.979591369628906px;
-		width: 30.979591369628906px;
-		text-align: center;
-		align-items: center;
-
-		margin-top: px;
-		border-radius: 5.122448921203;
-		box-sizing: border-box;
-		background: #ffffff;
-		border: 1.28061px solid #420;
-		border-radius: 5.12245px;
-	}
-	.navigation-button button {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 17.9286px;
-		line-height: 26px;
-		/* or 143% */
-		text-align: center;
-		/* Dark Grey / 400 */
-		color: #212b36;
-		margin-top: 4px;
-	}
+       
 }
 
 

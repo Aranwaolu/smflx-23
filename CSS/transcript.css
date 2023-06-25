@@ -212,10 +212,11 @@ align-items: center;
 .transcript-by-pastors-container{
 width: 100%;
 margin-top: 15px;
-border-radius:0px 0px  11px 11px;
+border-radius:0px 0px  20px 20px;
 }
 .transcript-by-pastors img{
 	width: 80%;
+	border-radius:20PX 20PX 0px 0px ;
 }
 .transcript{
 width: 80%;
