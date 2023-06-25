@@ -128,6 +128,13 @@
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+.search-col img{
+    width: 20px;
+   height: 20px;
+    padding: 2.08349609375px 3.124349594116211px 3.124837875366211px 2.083984375px;
+   
+
+}
 .breadcrumb-text{
     width: 100%;
     height: 100%;
@@ -194,7 +201,7 @@ div.breadcrumb-para1{
     font-weight: 300;
 
 }
-.messages-gallery .search-icon{
+/* .messages-gallery .search-icon{
     height: 19.79px;
     width: 19.79px;
     border-radius: 0px;
@@ -202,7 +209,8 @@ div.breadcrumb-para1{
 	margin-top: 17px;
 	margin-left: 13px;
 	cursor: pointer;
-}
+   
+} */
 .select1{
     width: 211px;
     height: 55px;

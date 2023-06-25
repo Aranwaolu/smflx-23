@@ -158,7 +158,7 @@
         
     }
     .hero--container--message-text >h4{
-        font-family: 'Clash Display';
+        font-family: 'ClashDisplay-Medium', 'sans-serif';
         font-size: 48px;
         font-weight: 700;
         line-height: 63px;
