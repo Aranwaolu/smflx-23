@@ -34,7 +34,7 @@
     display: none;
 }
 .navbarlists a{
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: #423971;
 }
 /* Note: backdrop-filter has minimal browser support */
@@ -64,7 +64,7 @@
         display: block;
     }
     .navbar .burger-menu .bar{
-        font-size: 2rem;
+        font-size: 1.09rem;
     }
     .navbar .mobileNavMenu{
         width: 100%;
@@ -243,7 +243,7 @@
     .quicklinks-container{
         width: 100%;
         height: auto;
-        background-image: url(./assets/images/quicklinks-bg.png);
+        background-image: url(../assets/images/quicklinks-bg.png);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
