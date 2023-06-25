@@ -123,7 +123,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 40px 20px;
-    background-image: url('/assets/images/Bg\ Image.png');
+    background-image: url('/assets/images/photo.png');
 	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -316,7 +316,7 @@ height: 118.13706970214844px;
     }
     .hero--container--message-text >p{
         font-family: 'Sofia Pro';
-      
+    
         font-size: 12px;
         font-weight: 300;
         line-height:15px ;
@@ -332,7 +332,7 @@ height: 118.13706970214844px;
         background: #E7FFF1;
         padding: 10px;
         width: 100%;
-        height: 750px;
+        height: 575px;
     }
         
         
@@ -346,9 +346,10 @@ height: 118.13706970214844px;
         
     }
     .smflx-photo-gallery-text {
-        padding: 100px 40px;
+        padding: 10px 40px;
         text-align: center;
         }
+
     .smflx-photo-gallery-text >p{
         width: 260px;
     
@@ -442,7 +443,7 @@ height: 118.13706970214844px;
                 background: #E7FFF1;
                 padding: 10px;
                 width: 100%;
-                height: 750px;
+                height: 575px;
             }
                 
                 
@@ -456,7 +457,7 @@ height: 118.13706970214844px;
                 
             }
             .smflx-photo-gallery-text {
-                padding: 100px 40px;
+                padding: 10px 40px;
                 text-align: center;
                 }
             .smflx-photo-gallery-text >p{
