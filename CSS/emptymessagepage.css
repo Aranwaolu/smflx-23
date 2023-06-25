@@ -146,9 +146,9 @@
     
     }
     .hero--container--message-text >h5{
-        width: 737px;
+        width: 100%;
         height: 118px;    
-        font-family: 'Clash Display';
+        font-family: 'ClashDisplay-Medium', 'sans-serif';
         font-size: 48px;
         font-weight: 400;
         line-height: 59px;
@@ -175,6 +175,7 @@
         text-align: center;
         color: lightgray;
         width: 639px;
+        margin: 0% auto;
         height: 72px;
     }
     .hero--container--message-text span{
@@ -294,12 +295,12 @@ height: 118.13706970214844px;
     .hero--container--message-text >h5{
         width: 380px;
         margin: 9% auto;
-        margin-bottom: -20%;
+        margin-bottom: -25%;
         height: 118px;    
         font-family: 'ClashDisplay-SemiBold', sans-serif;
         font-size: 18px;
         font-weight: 400;
-        line-height: 19px;
+        line-height: 25px;
         letter-spacing: 0em;
         text-align: center;
     }
@@ -310,8 +311,8 @@ height: 118.13706970214844px;
         line-height: 0px;
         letter-spacing: 0em;
         text-align: center;
-        margin-top: -1.8em;
-        margin-bottom: 0%;
+        margin-top: -1.4em;
+        margin-bottom: -10%;
     }
     .hero--container--message-text >p{
         font-family: 'Sofia Pro';
@@ -404,36 +405,36 @@ height: 118.13706970214844px;
             .hero--container--message-text >h5{
                 width: 380px;
                 margin:-9% auto;
-                margin-bottom:-10% ;
+                margin-bottom:-20% ;
                 height: 118px;    
                 font-family: 'ClashDisplay-SemiBold', sans-serif;
-                font-size: 28px;
+                font-size: 23px;
                 font-weight: 400;
-                line-height: 19px;
+                line-height: 20px;
                 letter-spacing: 0em;
                 text-align: center;
             }
             .hero--container--message-text >h4{
                 font-family: 'ClashDisplay-SemiBold', sans-serif;
-                font-size: 29px;
+                font-size: 26px;
                 font-weight: 700;
                 line-height: 0px;
                 letter-spacing: 0em;
                 text-align: center;
                 margin-top: -1.8em;
-                margin-bottom: 10%;
+                margin-bottom: 0%;
             }
             .hero--container--message-text >p{
                 font-family: 'Sofia Pro';
               
-                font-size: 15px;
+                font-size: 21px;
                 font-weight: 300;
-                line-height:15px ;
+                line-height:20px ;
                 letter-spacing: 0em;
                 text-align: center;
                 color: lightgray;
                 width: 250px;
-                margin: 15px auto;
+                margin: 19px auto;
                 margin-bottom: 50px;
                 height: 72px;
             }
