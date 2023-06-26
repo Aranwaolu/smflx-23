@@ -263,6 +263,7 @@
 }
 .audio-col audio{
     width: 100%;
+    background-color: #05052E;
     
 }
 #audio::-webkit-media-controls-enclosure{
