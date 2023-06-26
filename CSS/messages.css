@@ -129,8 +129,10 @@
 .search-col img{
     width: 20px;
    height: 20px;
-    padding: 2.08349609375px 3.124349594116211px 3.124837875366211px 2.083984375px;
-   
+    padding: 1.08349609375px 2.124349594116211px 2.124837875366211px 1.083984375px;
+   position: absolute;
+   margin-top: 1.3em;
+   margin-left: .3em;
 
 }
 .breadcrumb-text{
@@ -216,12 +218,14 @@ div.breadcrumb-para1{
     border-radius: 4px;
     border: 1px solid #E7E7E7;
     /* padding: 0 4rem; */
+    color: rgba(128, 128, 128, 0.952);
 }
 .select2{
     width: 249px;
     height: 55px;
     border-radius: 4px;
     border: 1px solid #E7E7E7;
+    color: rgba(128, 128, 128, 0.932);
 }
 .messages-gallery-container{
     width: 100%;
@@ -572,7 +576,7 @@ margin-top: 4px;
 @media (max-width:1024px) {
     .breadcrumb{
         width: 100%;
-        height:70vh;
+        height:80vh;
         background-image: url(/assets/images/messages-hero.png);
         background-size: cover;
         background-repeat: no-repeat;
