@@ -314,8 +314,8 @@ div.breadcrumb-para1{
 
 /* Pagination  */
 .next-page{
-	display: flex;
-	flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(5, .5fr);
 	justify-content: center;
 	padding: 45px;
 }
