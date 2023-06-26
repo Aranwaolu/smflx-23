@@ -115,8 +115,9 @@
     }
 }
 .messagesplayer-grid{
-    width: 100%;
-    height: auto;
+    width: 1440px;
+    height: 901px;
+
     background-image: url(./assets/images/messageplayer-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -161,6 +162,7 @@
     justify-content: center;
     align-items: center;
     padding: 5rem;
+    background: url(/assets/images/);
 }
 .messages-gallery-container-col{
     width: 80%;

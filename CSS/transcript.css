@@ -129,10 +129,10 @@
 .hero--container--transcript >h4{
 	width: 400px;
 	height: 49px;
-    font-family: 'Clash Display';
+    font-family: 'ClashDisplay-Medium', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 59px;
     /* identical to box height */
     text-align: center;
@@ -156,9 +156,10 @@ padding: 20px 50px;
 width: 100%;
 }
 .message-transcript >h4{
+font-family: 'ClashDisplay-Medium', sans-serif;
 font-style: normal;
 font-weight: 600;
-font-size: 27px;
+font-size: 22px;
 line-height: 49px;
 color: #312A50;
 }
@@ -174,7 +175,7 @@ color: #312A50;
 	border: 1px solid #E7E7E7;
 }
 .search-container input::placeholder{
-	margin: 4em;
+	margin: 5em;
 	color: #42397147;
 }
 .fa-search{
@@ -200,12 +201,14 @@ color: #312A50;
 	font-size: 16px;
 	line-height: 150%;
 	/* identical to box height, or 24px */
-	color: #423971;
+	color: #423971d7;
 }
 .transcript-by-pastors{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 align-items: center;
+justify-content: center;
+
 	/* margin-bottom: 2em; */
 	/* grid-template-columns:repeat(auto-fit, minmax(600px ,1fr)); */
 }
@@ -213,10 +216,12 @@ align-items: center;
 width: 100%;
 margin-top: 15px;
 border-radius:0px 0px  20px 20px;
+margin: 15px auto;
+margin-left: 3em;
 }
 .transcript-by-pastors img{
 	width: 80%;
-	border-radius:20PX 20PX 0px 0px ;
+	border-radius:20px 20px 0px 0px ;
 }
 .transcript{
 width: 80%;
@@ -229,8 +234,8 @@ padding: 20px;
 
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
-line-height: 150%;
+font-size: 14px;
+line-height: 170%;
 color: #c82127;
 }
 .transcript span{
@@ -238,14 +243,14 @@ color: #c82127;
 }
 .download-transcript{
 width: 157.2px;
-height: 30.34px;
+height: 40.34px;
 background: #FFFFFF;
-border: 0.541806px solid rgba(49, 42, 80, 0.24);
-border-radius: 1.62542px;
+border: 1.541806px solid rgba(43, 37, 70, 0.24);
+border-radius: 2.62542px;
 font-family: 'Clash Display';
 font-style: normal;
 font-weight: 400;
-font-size: 12px;
+font-size: 14px;
 line-height: 15px;
 /* identical to box height */
 
@@ -325,8 +330,8 @@ margin-top: 4px;
 		
 	}
 	.hero--container--transcript >h4{
-		font-family: 'Clash Display';
-		font-size: 40px;
+		font-family: 'ClashDisplay-Medium', sans-serif;
+		font-size: 30px;
 		font-weight: 600;
 		line-height: 49px;
 		letter-spacing: 0em;
@@ -349,7 +354,7 @@ margin-top: 4px;
             }
 			.transcript{
 				width: 80%;
-				height: 150px;
+				height: 170px;
 				background: #FFFFFF;
 				border-radius: 11px;
 				padding: 15px;
@@ -362,8 +367,8 @@ margin-top: 4px;
 				color: #c82127;
 				}
 				.download-transcript{
-					width: 125px;
-					height: 20.34px;}
+					width: 155px;
+					height: 40.34px;}
 }
 @media(max-width:500px) {
 	.hero--container--transcript{
@@ -407,9 +412,10 @@ margin-top: 4px;
             color: #FFFFFF;
             }
 	.message-transcript >h4{
+		font-family: 'ClashDisplay-Medium', sans-serif;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 22px;
+		font-size: 18px;
 		line-height: 49px;
 		color: #312A50;
 		}
@@ -466,6 +472,7 @@ margin-top: 4px;
 			width: 100%;
 			margin-top: 35px;
 			border-radius: 11px;
+			margin-left: 0px;
 			}
 			.hero--container--transcript >p{
 				width: 100%;
@@ -474,7 +481,8 @@ margin-top: 4px;
 				font-style: normal;
 				font-weight: 300;
 				font-size: 20px;
-				line-height: 150%;
+				line-height: 110%;
+				
 				/* or 36px */
 				text-align: center;
 				color: #FFFFFF;
@@ -489,7 +497,7 @@ margin-top: 4px;
 		} */
 		.transcript{
 			width: 100%;
-			height: 120px;
+			height: 150px;
 			background: #FFFFFF;
 			border-radius:0px 0px  11px 11px;
 			padding: 15px;
@@ -535,10 +543,10 @@ margin-top: 4px;
 			}
 			.download-transcript{
 				width: 130px;
-				height: 22.34px;
+				height: 27.34px;
 				background: #FFFFFF;
 				border: 0.541806px solid rgba(49, 42, 80, 0.24);
-				border-radius: 1.62542px;
+				border-radius: 3.62542px;
 				font-family: 'Clash Display';
 				font-style: normal;
 				font-weight: 400;
@@ -554,6 +562,7 @@ margin-top: 4px;
 				order: 0;
 				flex-grow: 0;
 			}
+			
 			.message-transcript{
 				background: #E7FFF1;
 				padding: 20px 15px;
@@ -602,6 +611,7 @@ margin-top: 4px;
 						.next button{
 							color: #FFFFFF;
 						}
+						
 							}
 						@media(max-width:768px) {
 						.navbarlists a{
