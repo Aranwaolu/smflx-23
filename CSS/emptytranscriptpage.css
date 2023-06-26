@@ -65,7 +65,7 @@
         display: block;
     }
     .navbar .burger-menu .bar{
-        font-size: 1.09rem;
+        font-size: 2rem;
     }
     .navbar .mobileNavMenu{
         width: 100%;
@@ -378,7 +378,7 @@ height: 118.13706970214844px;
             display: block;
         }
         .navbar .burger-menu .bar{
-            font-size: 1.09rem;
+            font-size: 2rem;
         }
         .navbar .mobileNavMenu{
             width: 100%;
@@ -499,7 +499,7 @@ height: 118.13706970214844px;
             font-family: 'ClashDisplay-SemiBold', sans-serif;
             font-style: normal;
             font-weight: 600;
-            font-size: 30px;
+            font-size: 20px;
             line-height: 49px;
             color: #312A50;
             
@@ -687,7 +687,7 @@ height: 118.13706970214844px;
             width: 250px;
             margin: 2% auto;
             height: 72px;
-            font-family:'Clash Display';
+            font-family:'ClashDisplay-SemiBold', sans-serif;
             font-size: 24px;
             font-weight: 600;
             line-height: 36px;

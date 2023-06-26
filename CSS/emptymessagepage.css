@@ -64,7 +64,7 @@
         display: block;
     }
     .navbar .burger-menu .bar{
-        font-size: 1.09rem;
+        font-size: 2rem;
     }
     .navbar .mobileNavMenu{
         width: 100%;
@@ -117,7 +117,7 @@
 /* PHOTO GALLERY */
 .photo-gallery-hero-container{
 	width: 100%;
-	height: 120vh;
+	height: 79vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -281,7 +281,7 @@ height: 118.13706970214844px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px 20px;
+        padding: 20px 20px;
         background-image: url('/assets/images/Bg\ Image.png');
         background-position: bottom center;
         background-size: cover;
@@ -405,7 +405,7 @@ height: 118.13706970214844px;
             }    
             .hero--container--message-text >h5{
                 width: 380px;
-                margin:-9% auto;
+                margin:15% auto;
                 margin-bottom:-20% ;
                 height: 118px;    
                 font-family: 'ClashDisplay-SemiBold', sans-serif;
