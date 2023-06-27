@@ -218,6 +218,7 @@ div.breadcrumb-para1{
     border-radius: 4px;
     border: 1px solid #E7E7E7;
     /* padding: 0 4rem; */
+    background-color: #FFFFFF;
     color: rgba(128, 128, 128, 0.952);
 }
 .select2{
@@ -225,6 +226,7 @@ div.breadcrumb-para1{
     height: 55px;
     border-radius: 4px;
     border: 1px solid #E7E7E7;
+    background-color: #FFFFFF;
     color: rgba(128, 128, 128, 0.932);
 }
 .messages-gallery-container{
