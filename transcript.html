@@ -4,9 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="reset.css" />
-		<link rel="stylesheet" href="index.css" />
-        <link rel="stylesheet" href="transcript.css" />
+		<link rel="stylesheet" href="/CSS/reset.css" />
+		<link rel="stylesheet" href="/CSS/index.css" />
+        <link rel="stylesheet" href="/CSS/transcript.css" />
+        <link rel="stylesheet" href="/CSS/messages.css">
 		<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />		<title>SMFLX'23</title>
 	</head>
@@ -17,13 +18,13 @@
                     <img src="/assets/images/lively-meetings-logo.svg" alt="" />
                 <ul class="navbarlists">
                     <li class="navbarlist">
-                        <a href="#">Photo Gallery</a>
+                        <a href="emptyphotopage.html">Photo Gallery</a>
                     </li>
                     <li class="navbarlist">
-                        <a href="#">Messages</a>
+                        <a href="emptymessagepage.html">Messages</a>
                     </li>
                     <li class="navbarlist">
-                        <a href="#">Transcripts</a>
+                        <a href="emptytranscriptpage.html">Transcripts</a>
                     </li>
                 </ul>
                 <div class="burger-menu">
@@ -38,16 +39,16 @@
                     </div>
                     <ul class="mobileNavbarLists">
                         <li class="mobileNavbarList">
-                            <a href="#">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li class="mobileNavbarList">
-                            <a href="#">Messages</a>
+                            <a href="emptymessagepage.html">Messages</a>
                         </li>
                         <li class="mobileNavbarList">
-                            <a href="#">Photo Gallery</a>
+                            <a href="emptyphotopage.html">Photo Gallery</a>
                         </li>
                         <li class="mobileNavbarList">
-                            <a href="#">Transcripts</a>
+                            <a href="emptytranscriptpage.html">Transcripts</a>
                         </li>
                     </ul>
                 </div>
@@ -59,21 +60,26 @@
                 <h4>Messages Transcripts</h4>
                 <p>I have hidden your word in my heart that I might not sin against you. Praise be to you, O LORD; teach me your decrees. </p>
             </div>
-            <div class="message-transcript">
-                <h4>Message Transcripts</h4> 
-                <div class="search-container">
-                    <i class="fa fa-search " aria-hidden="true"></i>
-                    <input type="text" id="search-input" class="select" placeholder="Search by Topic and Name " />
-                     <select name="Year 2023" id="" >
-                        <option value="2023" >Year 2023</option>  
-                        <option value="">year 2024</option>
-                       </select>
-                         <select name="Year 2023" id="" >
-                          <option value="2023">Minister Name</option>
-                         </select>
-                         
-                  </div>
-                  
+            <div class="messages-gallery">
+                <h1>SMFLX Messages Transcript</h1>
+                <div class="search-col">
+                    <img src="./assets/images/search-icon.png" alt="Search icon" class="search-icon">
+                    <input type="text" name="search" id="search" placeholder="Search by Topic and Name " class="input">
+                    <select name="yearFilter" id="yearFilter" class="select1">
+                        <!-- <option value="">All Year</option> -->
+                        <option value="2023">Year 2023</option>
+                        <option value="2022">Year 2022</option>
+                        <option value="2021">Year 2021</option>
+                        <option value="2020">Year 2020</option>
+                    </select>
+                    <select name="pastorsList" id="pastorsList" class="select2">
+                        <option value="">Minister Name</option>
+                        <option value="Pastor Thompson Ehima">Pastor Thompson Ehima</option>
+                        <option value="Pastor Emeka">Pastor Emeka</option>
+                        <option value="Pastor Tosin">Pastor Tosin</option>
+                        <option value="Pastor Michael">Pastor Michael</option>
+                    </select>
+                </div>      
                   
                     <div class="transcript-by-pastors">
                       <div class="transcript-by-pastors-container">

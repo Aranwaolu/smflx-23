@@ -1,0 +1,763 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.smflx-logo-holder{
+    width: 50%;
+}
+.smflx-logo img{
+    width: 8.95rem;
+    height: 4.63rem;
+}
+.navbar{
+    padding: 0 6rem;
+    width: 100%;
+    height: 6.81rem;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.active{
+    color:#C82127;
+    
+}
+.navbarlists{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navbar .burger-menu{
+    display: none;
+}
+.navbarlists a{
+    font-size: 2rem;
+    color: #423971;
+}
+/* Note: backdrop-filter has minimal browser support */
+.navbar .mobileNavMenu{
+    display: none;
+}
+@media (max-width:780px) {
+    
+    .navbar{
+        padding: 0 1.38rem;
+        width: 100%;
+        height: 6.81rem;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .smflx-logo img{
+        width: 8.95rem;
+        height: 3.29rem;
+    }
+    .navbar .navbarlists{
+        display: none;
+    } 
+    .navbar .burger-menu{
+        display: block;
+    }
+    .navbar .burger-menu .bar{
+        font-size: 2rem;
+    }
+    .navbar .mobileNavMenu{
+        width: 100%;
+        height: 100%;
+        background: #05052E;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: white;
+        padding: 0;
+        margin: 0;
+        z-index: 999;
+        transform: translateX(-200%);
+        transition: 1s;
+    }
+    .open{
+        transform: translateX(0%) !important;
+    }
+    .navbar .mobileNavMenu .mobileNavbarLists{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 5rem;
+        align-items: center;
+    }
+    /* .navbar .mobileNavMenu .mobileNavbarList a{
+        color: 20rem;
+    } */
+    .navbar .mobileNavMenu a{
+        color: white;
+        font-size: 1.88rem;
+        font-weight: 700;
+    }
+    .navbar .mobileNavMenu .close{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 0 4rem ;
+    }
+    .navbar .mobileNavMenu .close img{
+        font-size: 1.29rem;
+        font-family: 500;
+    }
+}
+.photo-gallery-hero-container{
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 20px;
+    background-image: url('/assets/images/image\ 18.png');
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	/* position: relative; */
+	/* overflow: hidden; */
+}
+.hero--container--transcript h1{
+    font-family: 'ClashDisplay-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 59px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+        
+    }
+    .hero--container--transcript >p{
+        width: 60%;
+        margin: 4px auto;
+        font-family: 'Sofia Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 44px;
+        /* line-height: 150%; */
+        /* or 36px */
+        
+        text-align: center;
+        
+        color: #FFFFFF;
+           
+        
+        }
+        
+    .photo-gallery-container{
+        background: #E7FFF1;
+        padding: 10px;
+        width: 100%;
+        height: 939px;
+     
+        
+    
+    }
+    .smflx-photo-gallery-head {
+        display: flex;
+        width: 100%;
+        
+    }
+    .smflx-photo-gallery-head h3{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 49px;
+        color: #312A50;
+    }
+    .smflx-photo-gallery-head >div{
+        padding: 25px;
+    }
+.smflx-photo-gallery-text {
+padding: 150px 90px;
+text-align: center;
+}
+.smflx-photo-gallery-text >h5{
+    width: 300px;
+    margin: 2% auto;
+    height: 72px;
+    font-family:'Clash Display';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+   color: #05052E;
+}
+.smflx-photo-gallery-text >p{
+    width: 639px;
+    margin: 2% auto;
+    height: 60px;
+    font-family:' Sofia Pro';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    
+}
+.smflx-photo-gallery-svg-container{
+ 
+}
+.smflx-photo-gallery-svg-container >img{
+width: 134.8067169189453px;
+height: 118.13706970214844px;
+}
+@media(max-width:1025px){
+    .hero--container--transcript h4{
+       
+        font-family: 'Clash Display';
+    
+        font-style: normal;
+    
+        font-weight: 700;
+    
+        font-size: 34px;
+    
+        line-height: 59px;
+    
+        /* identical to box height */
+    
+        text-align: center;
+        color: #FFFFFF;
+        }
+        .hero--container--transcript >p{
+            width:40%;
+            margin: 1px auto;
+            font-family: 'Sofia Pro';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 150%;
+            /* or 36px */
+            
+            text-align: center;
+            
+            color: #FFFFFF;
+               
+            
+            }
+    
+        .hero--container--transcript p{
+            width: 60%;
+    
+            margin: 1px auto;
+    
+            font-family: 'Sofia Pro';
+    
+            font-style: normal;
+    
+            font-weight: 300;
+    
+            font-size: 24px;
+    
+            line-height: 150%;
+    
+            /* or 36px */
+            text-align: center;
+            color: #FFFFFF;
+            }
+    /* .smflx-photo-gallery-head h5{ */
+/*  */
+        /* font-style: normal; */
+/*  */
+        /* font-weight: 600; */
+/*  */
+        /* font-size: 25px; */
+/*  */
+        /* line-height: 49px; */
+/*  */
+        /* color: #312A50; */
+/*  */
+    /* } */
+/*  */
+/*  */
+/*  */ }
+@media(max-width:500px){
+    .photo-gallery-hero-container{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 60px;
+        background-image: url('/assets/images/bg.png');
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-style: normal;
+        color: #ffffff;
+        /* position: relative; */
+        /* overflow: hidden; */
+    
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    @import url('/assets/fonts/clash-display/css/clash-display.css');
+    @import url('/assets/fonts/sofia-pro/css/sofia-pro.css');
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+    .smflx-logo-holder{
+        width: 50%;
+    }
+    .smflx-logo img{
+        width: 8.95rem;
+        height: 4.63rem;
+    }
+    .navbar{
+        padding: 0 6rem;
+        width: 100%;
+        height: 6.81rem;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbarlists{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .active{
+        color:#C82127;
+        
+    }
+    .navbar .burger-menu{
+        display: none;
+    }
+    .navbarlists a{
+        font-size: 2rem;
+        color: #423971;
+    }
+    /* Note: backdrop-filter has minimal browser support */
+    .navbar .mobileNavMenu{
+        display: none;
+    }
+    @media (max-width:780px) {
+        
+        .navbar{
+            padding: 0 1.38rem;
+            width: 100%;
+            height: 6.81rem;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+        .smflx-logo img{
+            width: 8.95rem;
+            height: 3.29rem;
+        }
+        .navbar .navbarlists{
+            display: none;
+        } 
+        .navbar .burger-menu{
+            display: block;
+        }
+        .navbar .burger-menu .bar{
+            font-size: 2rem;
+        }
+        .navbar .mobileNavMenu{
+            width: 100%;
+            height: 100%;
+            background: #05052E;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: white;
+            padding: 0;
+            margin: 0;
+            z-index: 999;
+            transform: translateX(-200%);
+            transition: 1s;
+        }
+        .open{
+            transform: translateX(0%) !important;
+        }
+        .navbar .mobileNavMenu .mobileNavbarLists{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 5rem;
+            align-items: center;
+        }
+        /* .navbar .mobileNavMenu .mobileNavbarList a{
+            color: 20rem;
+        } */
+        .navbar .mobileNavMenu a{
+            color: white;
+            font-size: 1.88rem;
+            font-weight: 700;
+        }
+        .navbar .mobileNavMenu .close{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            padding: 0 4rem ;
+        }
+        .navbar .mobileNavMenu .close img{
+            font-size: 1.29rem;
+            font-family: 500;
+        }
+    }
+    /* PHOTO GALLERY */
+    .photo-gallery-hero-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        background-image: url('/assets/images/photo.png');
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-style: normal;
+        color: #ffffff;
+        /* position: relative; */
+        /* overflow: hidden; */
+    }
+    .hero--container--transcript
+    
+            
+        .photo-gallery-container{
+            background: #E7FFF1;
+            padding: 10px;
+            width: 100%;
+            height: 939px;
+         
+            
+        
+        }
+        .hero--container--photo-text >h4{
+           font-family:'ClashDisplay-SemiBold', sans-serif ;
+            width: 486px;
+            margin: 0px auto;
+            height: 59px;
+            font-family: 'Clash Display';
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+        .hero--container--photo-text >p{
+            font-family: 'Sofia Pro';
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: lightgray;
+            width: 639px;
+            height: 72px;
+        }
+        .smflx-photo-gallery-head {
+            display: flex;
+            width: 100%;
+            
+        }
+        .photo-gallery-container{
+            background: #E7FFF1;
+            padding: 10px;
+            width: 100%;
+            height: 939px;
+         
+            
+            
+        }
+        .smflx-photo-gallery-head h3{
+            font-family: 'ClashDisplay-SemiBold', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 49px;
+            color: #312A50;
+            
+        }
+        .smflx-photo-gallery-head >div{
+            padding: 25px;
+        }    
+        .photos img{
+            height: 353px;
+            width: 368px;
+            border-radius: 0px;
+        }
+    .smflx-photo-gallery-text {
+    padding: 150px 90px;
+    text-align: center;
+    }
+    .smflx-photo-gallery-text >h5{
+        width: 300px;
+        margin: 2% auto;
+        height: 72px;
+        font-family:'ClashDisplay-SemiBold', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+       color: #05052E;
+    }
+    .smflx-photo-gallery-text >p{
+        width: 639px;
+        margin: 2% auto;
+        height: 60px;
+        font-family:' Sofia Pro';
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0em;
+        color: grey;
+    }
+    .smflx-photo-gallery-svg-container{
+     
+    }
+    .smflx-photo-gallery-svg-container >img{
+    width: 134.8067169189453px;
+    height: 118.13706970214844px;
+    }
+    /* @media(max-width:1025px){ */
+        /* .photos{ */
+            /* width: 100%; */
+            /* display: grid; */
+            /* grid-template-columns: repeat(2, .5fr); */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* margin-top: 5em; */
+            /* padding: 50px 50px; */
+        /* } */
+        
+    /* } */
+    @media(max-width:500px){
+        .photo-gallery-hero-container{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            background-image: url('/assets/images/bg.png');
+            background-position: bottom center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-style: normal;
+            color: #ffffff;
+            /* position: relative; */
+            /* overflow: hidden; */
+        
+        }
+        .hero--container--photo-text h4{
+            font-family: 'ClashDisplay-SemiBold', sans-serif;
+            width: 300px;
+            margin: 0px auto;
+            height: 59px;
+            font-family: 'Clash Display';
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+        .hero--container--photo-text >p{
+            font-family: 'Sofia Pro';
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: lightgray;
+            width: 330px;
+            margin: 0px auto;
+            height: 72px;}
+        .smflx-photo-gallery-text {
+            padding: 100px 40px;
+            text-align: center;
+            }
+            .smflx-photo-gallery-head h5{
+               font-family: 'ClashDisplay-SemiBold', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 49px;
+                color: #312A50;
+                
+            }
+        .smflx-photo-gallery-text >p{
+            width: 260px;
+        
+            margin: 9% auto;
+        
+            height: 60px;
+        
+            font-family:' Sofia Pro';
+        
+            font-size: 20px;
+        
+            font-weight: 300;
+        
+            line-height: 30px;
+        
+            letter-spacing: 0em;
+        }
+            
+            .smflx-photo-gallery-text >h5{
+                width: 250px;
+                margin: 2% auto;
+                height: 72px;
+                font-family:'ClashDisplay-SemiBold', sans-serif;
+                font-size: 23px;
+                font-weight: 600;
+                line-height: 36px;
+                letter-spacing: 0em;
+                text-align: center;
+               color: #05052E;
+            
+            
+            
+            }
+        
+        
+            .photo-gallery-container{
+                background: #E7FFF1;
+                padding: 10px;
+                width: 100%;
+                height: 700px;
+             
+                
+            
+            }
+        
+        }
+    
+    .smflx-photo-gallery-text {
+        padding: 100px 0px;
+        text-align: center;
+        }
+    .smflx-photo-gallery-text >p{
+        width: 70%;
+        margin:20% auto;
+    
+        height: 60px;
+    
+        font-family:' Sofia Pro';
+    
+        font-size: 12px;
+    
+        font-weight: 300;
+    
+        line-height: 30px;
+    
+        letter-spacing: 0em;
+        color: gray;
+        
+    }
+        
+        .smflx-photo-gallery-text >h5{
+            width: 250px;
+            margin: 2% auto;
+            height: 72px;
+            font-family:'ClashDisplay-SemiBold', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: center;
+           color: #05052E;
+        
+        
+        
+        }
+    
+     .hero--container--transcript{
+            background: #E7FFF1;
+            padding: 10px;
+            width: 100%;
+            height: 700px;
+         
+            
+        
+        }
+    
+       
+    
+    
+    
+    
+    
+    .hero--container--transcript h4{
+        font-family: 'Clash Display';
+    
+        font-style: normal;
+    
+        font-weight: 700;
+    
+        font-size: 34px;
+    
+        line-height: 59px;
+    
+        /* identical to box height */
+    
+        
+    
+        text-align: center;
+    
+        
+    
+        color: #FFFFFF;
+    
+            
+    
+        }
+        .hero--container--transcript p{
+            width: 60%;
+    
+            margin: 1px auto;
+    
+            font-family: 'Sofia Pro';
+    
+            font-style: normal;
+    
+            font-weight: 300;
+    
+            font-size: 24px;
+    
+            line-height: 150%;
+    
+            /* or 36px */
+            text-align: center;
+          
+            }
+    
+    
+        }
