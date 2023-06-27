@@ -6,7 +6,6 @@
 	display: none;
 }
 
-
 /* NAV */
 /* .nav--container { */
 /* position: sticky; */
@@ -166,7 +165,7 @@
 	justify-content: flex-end;
 	align-items: center;
 	padding: 40px 30px;
-	background-image: url('/assets/images/page-new-hero-mobile.png');
+	background-image: url('/assets/images/index/page-new-hero-mobile.png');
 	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -398,7 +397,7 @@
 .what-is-smflx--bg-img {
 	width: 100%;
 	height: 100%;
-	background-image: url('/assets/images/what-is-smflx-img.png');
+	background-image: url('/assets/images/index/what-is-smflx-img.png');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -539,7 +538,7 @@ a.register-btn--red {
 .wake-new-dawn--bg-img {
 	width: 100%;
 	height: 100%;
-	background-image: url('/assets/images/wake-dawn-bg-img.png');
+	background-image: url('/assets/images/index/wake-dawn-bg-img.png');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -618,7 +617,7 @@ a.register-btn--red {
 .worship-experience--bg-img {
 	width: 100%;
 	height: 100%;
-	background-image: url('/assets/images/worship-experience-smflx-bg-img.png');
+	background-image: url('/assets/images/index/worship-experience-smflx-bg-img.png');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -704,7 +703,7 @@ a.register-btn--red {
 .servants-of-God--bg-img {
 	width: 100%;
 	height: 100%;
-	background-image: url('/assets/images/servants-of-God-bg-img.png');
+	background-image: url('/assets/images/index/servants-of-God-bg-img.png');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -824,69 +823,6 @@ a.register-btn--red {
 	margin: 0;
 }
 
-.servants-of-God-silhouette--list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 21px 0 21px;
-	gap: 10px;
-}
-
-.servants-of-God-silhouette--list > h3 {
-	font-family: 'ClashDisplay-SemiBold', sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 30px;
-	text-align: center;
-	letter-spacing: 0.045em;
-	color: #423971;
-	max-width: 300px;
-}
-
-.servants-of-God-silhouette-list--images {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
-	padding: 0 24px;
-}
-
-.servants-of-God-silhouette-list--images > div.servants-of-God--single-silhouette {
-	width: 290px;
-	height: 293px;
-	background: #d9d9d9;
-	border-radius: 7px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	padding: 0 19px;
-	position: relative;
-}
-
-.servants-of-God--single-silhouette > img {
-	position: relative;
-	width: 100%;
-	object-fit: cover;
-	-webkit-filter: contrast(0) sepia(100%) hue-rotate(0deg) saturate(0%) brightness(0%);
-	filter: contrast(1) sepia(100%) hue-rotate(0deg) saturate(0%) brightness(0%);
-	opacity: 1;
-}
-
-.servants-of-God--single-silhouette > p {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	font-family: 'ClashDisplay-SemiBold', sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 82.4977px;
-	line-height: 101px;
-	letter-spacing: 0.045em;
-	color: rgba(255, 255, 255, 0.33);
-}
-
 /* Meeting Schedule */
 .meeting-schedule--container {
 	width: 100%;
@@ -894,7 +830,7 @@ a.register-btn--red {
 	flex-direction: column;
 	padding: 26px 0 40px;
 	color: #ffffff;
-	background: url('/assets/images/hero-bg.png');
+	background: url('/assets/images/index/hero-bg.png');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -964,7 +900,7 @@ a.register-btn--red {
 .special-feature-hot-seat {
 	width: 100%;
 	height: 383px;
-	background: url('/assets/images/special-feature-hot-seat.png');
+	background: url('/assets/images/index/special-feature-hot-seat.png');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1012,7 +948,7 @@ a.register-btn--red {
 	display: flex;
 	flex-direction: column;
 	padding: 50px 20px;
-	background-image: url('/assets/images/meal-feeding-plan-bg-img.png');
+	background-image: url('/assets/images/index/meal-feeding-plan-bg-img.png');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1337,7 +1273,7 @@ a.register-btn--red {
 		flex-direction: column;
 		align-items: center;
 		padding: 76px 0 0;
-		background: url('/assets/images/desktop-bg.png');
+		background: url('/assets/images/index/desktop-bg.png');
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1427,7 +1363,7 @@ a.register-btn--red {
 		color: #ffffff;
 		position: relative;
 		overflow: hidden;
-		background-image: url('/assets/images/page-new-hero.png');
+		background-image: url('/assets/images/index/page-new-hero.png');
 	}
 
 	.hero--container > h3 {
@@ -1665,7 +1601,7 @@ a.register-btn--red {
 	.what-is-smflx--bg-img {
 		width: 100%;
 		height: 100%;
-		background-image: url('/assets/images/what-is-smflx-img.png');
+		background-image: url('/assets/images/index/what-is-smflx-img.png');
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1786,7 +1722,7 @@ a.register-btn--red {
 	.wake-new-dawn--bg-img {
 		width: 100%;
 		height: 100%;
-		background-image: url('/assets/images/wake-dawn-bg-img.png');
+		background-image: url('/assets/images/index/wake-dawn-bg-img.png');
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1956,6 +1892,16 @@ a.register-btn--red {
 		padding: 21px 0 0;
 	}
 
+	.servants-of-God--list > h3 {
+		color: #312a50;
+		text-align: center;
+		font-size: 4.8rem;
+		font-family: 'ClashDisplay-Medium', sans-serif;
+		font-weight: 600;
+		letter-spacing: 0.216rem;
+		margin: 8.9rem auto 5.3rem;
+	}
+
 	.servants-of-God--single {
 		/* width: 100%; */
 		display: flex;
@@ -1965,15 +1911,35 @@ a.register-btn--red {
 		padding: 21px 0 0;
 		gap: 32px;
 		padding: 0 24px;
-		margin: 0 auto 40px;
+		margin: 0 auto 50px;
 	}
 
 	.servants-of-God--single > img {
 		width: 528px;
-		height: 557px;
+		max-height: 557px;
 		object-fit: cover;
 		margin-bottom: 12px;
 		border-radius: 18px;
+	}
+
+	.servants-of-God--single > img.rev-Helen-portrait {
+		height: 355px;
+	}
+
+	.servants-of-God--single > img.rev-Olabode-portrait {
+		height: 557px;
+	}
+
+	.servants-of-God--single > img.rev-Ken-portrait {
+		height: 439px;
+	}
+
+	.servants-of-God--single > img.pst-Emeka-portrait {
+		height: 402px;
+	}
+
+	.servants-of-God--single > img.pst-Tosin-portrait {
+		height: 557px;
 	}
 
 	.servants-of-God--single > .servants-of-God--single-content {
@@ -2025,55 +1991,6 @@ a.register-btn--red {
 		margin: 0;
 	}
 
-	/* Servants of God silhouette list */
-	.servants-of-God-silhouette--list {
-		margin: 90px 0 65px;
-		gap: 40px;
-		width: 100%;
-	}
-
-	.servants-of-God-silhouette--list > h3 {
-		max-width: 851px;
-		font-size: 48px;
-		line-height: 59px;
-		color: #312a50;
-	}
-
-	.servants-of-God-silhouette-list--images {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: 50px;
-		padding: 0 80px;
-		margin: 0 auto;
-	}
-
-	.servants-of-God-silhouette-list--images > div.servants-of-God--single-silhouette {
-		width: 100%;
-		max-width: 1067px;
-		height: 557px;
-		border-radius: 18px;
-		background-image: url('/assets/images/silhouette-minister--bg.png');
-		/* mix-blend-mode: difference; */
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		filter: hue-rotate(180deg);
-	}
-
-	.servants-of-God--single-silhouette > img {
-		width: 100%;
-		height: 462px;
-		object-fit: contain;
-	}
-
-	.servants-of-God--single-silhouette > p {
-		font-size: 153.807px;
-		line-height: 189px;
-	}
-
 	/* Meeting schedule */
 	.meeting-schedule--container {
 		display: none;
@@ -2084,7 +2001,7 @@ a.register-btn--red {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-image: url('/assets/images/meeting-schedules-bg-img.png');
+		background-image: url('/assets/images/index/meeting-schedules-bg-img.png');
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -2304,7 +2221,7 @@ a.register-btn--red {
 		padding: 84px 96px;
 		color: #ffffff;
 		margin: 0;
-		background-image: url('/assets/images/accommodation-bg-img.png');
+		background-image: url('/assets/images/index/accommodation-bg-img.png');
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
