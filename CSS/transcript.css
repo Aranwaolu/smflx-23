@@ -59,7 +59,9 @@
         display: block;
     }
     .navbar .burger-menu .bar{
-        font-size: 2rem;
+        font-size: 1.6rem;
+		margin-top: -.6em;
+		margin-left: -1em;
     }
     .navbar .mobileNavMenu{
         width: 100%;
