@@ -1,23 +1,26 @@
-v/* TRANSCRIPT-READ */
+/* TRANSCRIPT-READ */
 .hero--container--transcript-read{
     width:100% ;
-    height: 80vh;
+    height: 70vh;
 	background-image: url('/assets/images/bg.png');
 	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 15em 0px;
+	padding: 11em 0px;
 }
-.hero--container--transcript-read img{
-    width: 60%;
-   position: relative;
+ img{
+    /* width: 20%; */
+	/* margin: 0px auto; */
+   /* position: relative; */
+   /* top: -30em;
+   left: 10em; */
   
-}
+ }
 .hero--container--transcript-read h4{
 	width: 834px;
 	height: 42px;
 	margin: 0px auto;
-	font-family: 'Clash Display';
+	font-family: 'ClashDisplay-Medium', sans-serif;;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 34px;
@@ -28,19 +31,59 @@ v/* TRANSCRIPT-READ */
 	flex: none;
 	order: 0;
 	flex-grow: 0;}
-.transcript-text{
-	padding: 160px 50px;
-	margin-top: 100px;
+.transcript-text{ 
+	 padding: 200px 50px;
+	margin-top: -33em;
 	
+	
+} 
+.hero--container--transcript-read p{
+width: 499px;
+margin: 1% 22%;
+height: 24px;
+font-family: 'Sofia Pro';
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color:#FFFFFF;
+
 }
-.hero--container--transcript-read{
-	margin-top: 80px;
+.hero--container--transcript-read span{
+	color: #F47B20;
+}
+/* .hero--container--transcript-read{ */
+	/* margin-top: 80px;
 	text-align: center;
 	align-items: center;
+} */
+.transcript-download{
+width: 128px;
+height: 32px;
+margin: 1% 70%;
+padding: 9.015498161315918px 22.538745880126953px 9.015498161315918px 22.538745880126953px;
+border-radius: 3.756457567214966px;
+border: 1px solid #FFFFFF66;
+gap: 7.512915134429932px;
+font-family: Montserrat;
+font-size: 11px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: center;
+color:#FFFFFF;
+justify-content: end;
 }
-.transcript-img-container img{
+.transcript-text img{
 
-width: 50%;
+width: 70%;
+margin: -3% 10%;
+
+}
+
+.transcript-text p{
+margin-top: 3em;	
 }
 .transcript-img-container{
 	text-align: center;
