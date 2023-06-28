@@ -1,0 +1,99 @@
+/* RESETS */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+*:focus {
+	outline: none;
+}
+
+html {
+	font: 62.5% / 1.15 sans-serif; /* 1rem */
+	max-width: 100%;
+	/* overflow: auto; */
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	font: 1.3rem/1.25 'Sofia Pro', sans-serif;
+	font-weight: normal;
+	background-color: #ffffff;
+	color: #000000;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+h1,
+h2 {
+	margin-bottom: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+button {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	overflow: visible;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	line-height: normal;
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+	/* -webkit-appearance: none; */
+}
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+	outline: none;
+}
+
+button,
+input {
+	/* 1 */
+	overflow: visible;
+}
+
+input[type='text'] {
+	border-radius: 0;
+}
+@media screen and (min-width: 620px) {
+	body {
+		font-size: 1.6rem;
+		line-height: 1.31579;
+	}
+}
+
+a,
+a:visited {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: inherit;
+}
+/* END RESETS */
+::selection {
+	background-color: rgba(20, 184, 165, 0.45);
+}
