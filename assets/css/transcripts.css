@@ -1,102 +1,41 @@
-/* TRANSCRIPT */
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-.smflx-logo-holder{
-    width: 50%;
-}
-.smflx-logo img{
-    width: 8.95rem;
-    height: 4.63rem;
-}
-.navbar{
-    padding: 0 6rem;
-    width: 100%;
-    height: 6.81rem;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbarlists{
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-}
-.navbar .burger-menu{
-    display: none;
-}
-.navbarlists a{
-    font-size: 2rem;
-    color: #423971;
-}
-/* Note: backdrop-filter has minimal browser support */
-
-
-    .navbar .mobileNavMenu a{
-        color: white;
-        font-size: 1.88rem;
-        font-weight: 700;
-    }
-    .navbar .mobileNavMenu .close{
-        width: 100%;
-        height: 10%;
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        padding: 0 4rem ;
-    }
-    .navbar .mobileNavMenu .close img{
-        font-size: 1.29rem;
-        font-family: 500;
-    }
-}
-.hero--container--transcript{
+/* TRANSCRIPTS */
+.transcripts-hero-container {
 	width: 100%;
-	height: 100vh;
+	height: 610px;
+	position: relative;
+	background-image: url('/assets/images/transcripts/transcripts-hero-bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 40px 10px;
-	background-image: url('/assets/images/bg.png');
-	background-position: bottom center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	gap: 22px;
 	font-style: normal;
 	color: #ffffff;
-	/* position: relative; */
-	/* overflow: hidden; */
 }
 
-.hero--container--transcript > h4 {
+.transcripts-hero-container > h4 {
+	font-family: 'ClashDisplay-Bold', sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 28px;
+	font-size: 48px;
 	line-height: 59px;
-	margin-top: 45px;
-	/* identical to box height */
 	text-align: center;
-	color: #ffffff;
 }
-.hero--container--transcript > p {
-	width: 400px;
-	height: 108px;
+
+.transcripts-hero-container > p {
+	font-family: 'SofiaProRegular', sans-serif;
+	max-width: 640px;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 24px;
 	line-height: 150%;
-	/* or 36px */
 	text-align: center;
-	color: #ffffffe5;
-	margin-top: 3px;
-	word-spacing: 2px;
 }
+
+/* MAIN */
 .message-transcript {
 	background: #e7fff1;
 	padding: 20px 50px;

@@ -4,7 +4,7 @@ const setDefault = () => {
 }
 
 const fetchGalleryData = async () => {
-	return await axios.get('https://smflx-b64a687ce7fc.herokuapp.com/api/v1/audiomessages')
+	return await axios.get('https://smflx-b64a687ce7fc.herokuapp.com/api/v1/galleries')
 }
 
 const initGallery = async () => {
@@ -18,7 +18,7 @@ const initGallery = async () => {
 		if (response.data.data.length == 0) {
 			document.getElementById('photo-gallery--empty-state').style.display = 'block'
 		} else {
-			document.getElementById('photo-gallery-container').style.display = 'block'
+			// document.getElementById('photo-gallery-container').style.display = 'block'
 			// loop throught the results and display
 		}
 	} catch (error) {}

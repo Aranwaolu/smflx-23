@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/index.css" />
-		<link rel="stylesheet" href="/assets/css/quicklinks.css" />
+		<link rel="stylesheet" href="/assets/css/gallery.css" />
+		<link rel="stylesheet" href="/assets/css/messages.css" />
 
 		<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
 		<link
@@ -19,7 +20,7 @@
 		<title>SMFLX'23 - Messages</title>
 	</head>
 
-	<body>
+	<body onload="initMessages()">
 		<main>
 			<nav class="navbar">
 				<a href="" class="smflx-logo-holder">
@@ -62,25 +63,35 @@
 				</div>
 			</nav>
 
-			<div class="quicklinks-container">
-				<div class="quicklinks-logo">
-					<img src="./assets/images/smflx23-logo.png" alt="Quick Links logo" />
+			<div class="audio-messages-hero-container">
+				<h4>Listen Again and Again and Again</h4>
+				<h4>to <span>SMFLX</span> Audio Messages</h4>
+				<p>Stay Blessed as you listen again and again to all the messages ministered on SMFLX conference.</p>
+			</div>
+
+			<div id="audio-messages--empty-state" class="data-display--empty-state audio-messages--empty-state">
+				<h3>SMFLX Audio Messages</h3>
+
+				<div class="data-display--empty-state--content">
+					<img src="/assets/images/empty-state-icon.svg" alt="" />
+					<h5>No messages Yet. Watch out for this space</h5>
+					<p>Messages ministered in the conference will be shown in this space. Watch out for this space. Stay Blessed</p>
 				</div>
-				<div class="quiklinks-menu">
-					<div class="quicklinks-col">
-						<a href="/"> About SMFLX 2023 </a>
-					</div>
-					<div class="quicklinks-col">
-						<a href="#"> Real Time Announcements on SMFLX 2023 </a>
-					</div>
-					<div class="quicklinks-col">
-						<a href="messages.html"> Listen Again. See SMFLX 2023 Messages here </a>
-					</div>
-					<!-- <div class="quicklinks-col">
-						<a href="transcripts.html"> Read Messages Transcript Here </a>
-					</div> -->
-					<div class="quicklinks-col">
-						<a href="gallery.html"> Pictures Pictures Pictures </a>
+			</div>
+
+			<div id="audio-messages-container">
+				<div class="audio-messages--header">
+					<h3>SMFLX Audio Messages</h3>
+
+					<div class="search-container">
+						<select name="Year 2023" id="" class="hide">
+							<option value="2023">section</option>
+						</select>
+						<select name="Year 2023" id="" class="">
+							<option value="">Year 2023</option>
+							<option value="Morning section">Morning Section</option>
+							<option value="Evening section">Evening Section</option>
+						</select>
 					</div>
 				</div>
 			</div>
@@ -101,6 +112,8 @@
 			</footer>
 		</main>
 
+		<script src="/assets/js/messages.js"></script>
 		<script src="assets/js/nav.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</body>
 </html>

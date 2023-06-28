@@ -42,8 +42,12 @@
 	background: #e7fffa;
 }
 
-.photo-gallery--empty-state {
-	/* display: none; */
+.data-display--empty-state > h3 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 49px;
+	color: #312a50;
 }
 
 .data-display--empty-state--content {
@@ -85,7 +89,6 @@
 	padding: 10px;
 }
 
-.photo-gallery--empty-state > h3,
 .photo-gallery--header > h3 {
 	font-style: normal;
 	font-weight: 600;

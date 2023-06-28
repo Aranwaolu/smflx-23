@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/assets/css/reset.css" />
 		<link rel="stylesheet" href="/assets/css/index.css" />
-		<link rel="stylesheet" href="/assets/css/quicklinks.css" />
+		<link rel="stylesheet" href="/assets/css/gallery.css" />
+		<link rel="stylesheet" href="/assets/css/transcripts.css" />
 
 		<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
 		<link
@@ -16,10 +17,10 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<title>SMFLX'23 - Messages</title>
+		<title>SMFLX'23 - Transcripts</title>
 	</head>
 
-	<body>
+	<body onload="initTranscripts()">
 		<main>
 			<nav class="navbar">
 				<a href="" class="smflx-logo-holder">
@@ -33,7 +34,7 @@
 						<a href="messages.html">Messages</a>
 					</li>
 					<li class="navbarlist">
-						<a href="transcripts.html">Transcripts</a>
+						<a href="transcript.html">Transcripts</a>
 					</li>
 				</ul>
 				<div class="burger-menu">
@@ -62,25 +63,39 @@
 				</div>
 			</nav>
 
-			<div class="quicklinks-container">
-				<div class="quicklinks-logo">
-					<img src="./assets/images/smflx23-logo.png" alt="Quick Links logo" />
+			<div class="transcripts-hero-container">
+				<h4>Messages Transcripts</h4>
+				<p>
+					I have hidden your word in my heart that I might not sin against you. Praise be to you, O LORD; teach me your decrees.
+				</p>
+			</div>
+
+			<div id="transcripts--empty-state" class="data-display--empty-state transcripts--empty-state">
+				<h3>Message Transcripts</h3>
+
+				<div class="data-display--empty-state--content">
+					<img src="/assets/images/empty-state-icon.svg" alt="" />
+					<h5>No transcripts Yet. Watch out for this space</h5>
+					<p>
+						Transcripts of messages ministered in the conference will be shown in this space. Watch out for this space. Stay
+						Blessed
+					</p>
 				</div>
-				<div class="quiklinks-menu">
-					<div class="quicklinks-col">
-						<a href="/"> About SMFLX 2023 </a>
-					</div>
-					<div class="quicklinks-col">
-						<a href="#"> Real Time Announcements on SMFLX 2023 </a>
-					</div>
-					<div class="quicklinks-col">
-						<a href="messages.html"> Listen Again. See SMFLX 2023 Messages here </a>
-					</div>
-					<!-- <div class="quicklinks-col">
-						<a href="transcripts.html"> Read Messages Transcript Here </a>
-					</div> -->
-					<div class="quicklinks-col">
-						<a href="gallery.html"> Pictures Pictures Pictures </a>
+			</div>
+
+			<div id="transcripts-container">
+				<div class="transcripts--header">
+					<h3>Message Transcripts</h3>
+
+					<div class="search-container">
+						<select name="Year 2023" id="" class="hide">
+							<option value="2023">section</option>
+						</select>
+						<select name="Year 2023" id="" class="">
+							<option value="">Year 2023</option>
+							<option value="Morning section">Morning Section</option>
+							<option value="Evening section">Evening Section</option>
+						</select>
 					</div>
 				</div>
 			</div>
@@ -101,6 +116,8 @@
 			</footer>
 		</main>
 
+		<script src="/assets/js/transcripts.js"></script>
 		<script src="assets/js/nav.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</body>
 </html>
