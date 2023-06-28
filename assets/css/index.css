@@ -140,7 +140,7 @@
 		font-weight: 700;
 	}
 
-	.navbar .mobileNavMenu .close {
+	.navbar .mobileNavMenu .close-menu {
 		width: 100%;
 		height: 10%;
 		display: flex;
@@ -149,7 +149,7 @@
 		padding: 0 4rem;
 	}
 
-	.navbar .mobileNavMenu .close i {
+	.navbar .mobileNavMenu .close-menu i {
 		font-size: 2.6rem;
 		font-family: 500;
 	}
@@ -1225,7 +1225,7 @@ a.register-btn--red {
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
-	margin: 0 0 100px;
+	margin: 40px 0 100px;
 }
 
 .footer > h2 {
