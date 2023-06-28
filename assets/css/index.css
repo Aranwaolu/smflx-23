@@ -758,6 +758,16 @@ a.register-btn--red {
 	padding: 21px 0 0;
 }
 
+.servants-of-God--list > h3 {
+	color: #312a50;
+	text-align: center;
+	font-size: 2.4rem;
+	font-family: 'ClashDisplay-Medium', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.216rem;
+	margin: 2.1rem auto 1.3rem;
+}
+
 .servants-of-God--single {
 	width: 100%;
 	display: flex;
@@ -947,73 +957,55 @@ a.register-btn--red {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: 50px 20px;
+	padding: 80px 34px;
 	background-image: url('/assets/images/index/meal-feeding-plan-bg-img.png');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.meal-feeding-plan--container > h2 {
+.payment-has-ended--container {
 	width: 100%;
-	max-width: 265px;
-	font-family: 'ClashDisplay-Regular', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 30px;
-	letter-spacing: 0.045em;
-	color: #ffffff;
-}
-
-.meal-feeding-plan--container > h2 > span {
-	font-family: 'ClashDisplay-SemiBold', sans-serif, sans-serif;
-	font-weight: 600;
-}
-
-.meal-feeding-plan--details-group {
-	padding: 0;
-	display: flex;
+	height: 190px;
+	display: inline-flex;
 	flex-direction: column;
-	align-items: flex-start;
+	padding: 3.2rem 2.25rem 3.2488rem 2.15rem;
+	justify-content: center;
+	align-items: center;
 	gap: 18px;
-	margin: 28px 0 50px;
-	color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid rgba(255, 255, 255, 0.44);
+	background: rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(6px);
 }
 
-.meal-feeding-plan--details-group > h6 {
-	font-family: 'ClashDisplay-SemiBold', sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 22px;
+.payment-has-ended--container > h5 {
+	color: #fff;
 	text-align: center;
-	letter-spacing: 0.045em;
+	font-size: 1.6rem;
+	font-family: 'ClashDisplay-Medium', sans-serif;
+	font-weight: 500;
+	line-height: 150%;
+	letter-spacing: 0.072rem;
 }
 
-.meal-feeding-plan--detail {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+.payment-has-ended--container > h5 > span {
+	font-family: 'ClashDisplay-SemiBold', sans-serif;
+	font-weight: 600;
 }
 
-.meal-feeding-plan--detail > p {
-	font-family: 'Sofia Pro', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 17px;
-	line-height: 17px;
+.payment-has-ended--container > p {
+	max-width: 20rem;
+	color: #fff;
+	text-align: center;
+	font-size: 2.4rem;
+	font-family: 'ClashDisplay-SemiBold', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.048rem;
 }
 
-.meal-feeding-plan--detail > span {
-	font-family: 'ClashDisplay-Bold', sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 17px;
-	line-height: 17px;
-	text-align: right;
-	letter-spacing: 0.045em;
+.payment-has-ended--container > p > span {
+	color: #ffc42b;
 }
 
 /* Venue */
@@ -1060,98 +1052,13 @@ a.register-btn--red {
 	flex-direction: column;
 	align-items: flex-start;
 	/* gap: 18px; */
-	padding: 0 25px;
+	padding: 80px 35px;
 	color: #05052e;
 	margin: 48px 0;
-}
-
-.accommodation-content--group-one,
-.accommodation-content--group-two {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 100%;
-}
-
-.accommodation-content--group-one > a {
-	display: none;
-}
-.accommodation-content--group-two > a {
-	width: 100%;
-	margin-top: 22px;
-}
-
-.accommodation-content--group-one > h2 {
-	font-family: 'ClashDisplay-SemiBold', sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 30px;
-	text-align: center;
-	letter-spacing: 0.045em;
-	margin: 0 auto 22px;
-}
-
-.accommodation--container p {
-	font-family: 'SofiaProRegular', sans-serif;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 150%;
-	text-align: left;
-	letter-spacing: 0.045em;
-}
-
-.accommodation-content--group-one > p > span,
-.accommodation-content--group-two > p > span {
-	font-family: 'SofiaProMedium', sans-serif;
-	font-weight: 600;
-}
-
-.accommodation-content--group-one > h6 {
-	font-family: 'SofiaProMedium', sans-serif;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-	text-align: left;
-	letter-spacing: 0.045em;
-	margin: 22px 0;
-}
-
-.accommodation-content--group-two > p.hostel-breakdown {
-	margin: 20px 0 0;
-}
-
-.accommodation-content--group-two > p > span.red-text {
-	font-family: 'SofiaProMedium', sans-serif;
-	font-weight: 500;
-	color: #c82127;
-}
-
-.accommodation-content--group-two > ul {
-	list-style-type: disc;
-}
-
-.accommodation-content--group-two > ul.dashed {
-	margin: 0;
-	padding: 0 7px;
-	list-style-type: none;
-}
-.accommodation-content--group-two > ul.dashed > li {
-	text-indent: -5px;
-	font-family: 'SofiaProRegular', sans-serif;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 20px;
-	letter-spacing: 0.045em;
-	margin: 6px 0;
-}
-
-.accommodation-content--group-two > ul.dashed > li:before {
-	content: '–';
-	text-indent: -5px;
-	margin-right: 5px;
+	background-image: url('/assets/images/index/accommodation-bg-img.png');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /* Prepare your heart to be blessed */
@@ -1893,12 +1800,7 @@ a.register-btn--red {
 	}
 
 	.servants-of-God--list > h3 {
-		color: #312a50;
-		text-align: center;
 		font-size: 4.8rem;
-		font-family: 'ClashDisplay-Medium', sans-serif;
-		font-weight: 600;
-		letter-spacing: 0.216rem;
 		margin: 8.9rem auto 5.3rem;
 	}
 
@@ -2152,60 +2054,30 @@ a.register-btn--red {
 		padding: 92px 96px;
 	}
 
-	.meal-feeding-plan--container > h2 {
+	.payment-has-ended--container {
 		width: 100%;
-		max-width: 567px;
-		font-size: 40px;
-		line-height: 49px;
-	}
-
-	.meal-feeding-plan--container > h2 > span {
-		font-family: 'ClashDisplay-Bold', sans-serif;
-		font-weight: 700;
-	}
-
-	.meal-feeding-plan--details-container {
-		width: 100%;
-		display: flex;
+		height: 500px;
+		display: inline-flex;
 		flex-direction: column;
-		align-items: flex-start;
-		gap: 42px;
-		max-width: 549px;
+		padding: 3.2rem 2.25rem 3.2488rem 2.15rem;
+		justify-content: center;
+		align-items: center;
+		gap: 47px;
+		border-radius: 9px;
 	}
 
-	.meal-feeding-plan--details-container > a {
-		margin: 0;
+	.payment-has-ended--container > h5 {
+		font-size: 4rem;
 	}
 
-	.meal-feeding-plan--details-group {
-		width: 100%;
-		gap: 0;
-		margin: 0;
-		color: #ffffff;
-	}
-
-	.meal-feeding-plan--details-group > h6 {
-		font-size: 32px;
-		line-height: 39px;
-		margin-bottom: 32px;
-	}
-
-	.meal-feeding-plan--detail {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.meal-feeding-plan--detail > p {
-		font-size: 26px;
-		line-height: 26px;
-		margin-bottom: 37px;
-	}
-
-	.meal-feeding-plan--detail > span {
-		font-size: 26px;
-		line-height: 26px;
+	.payment-has-ended--container > p {
+		max-width: none;
+		color: #fff;
+		text-align: center;
+		font-size: 5.6rem;
+		font-family: 'ClashDisplay-SemiBold', sans-serif;
+		font-weight: 600;
+		letter-spacing: 0.048rem;
 	}
 
 	/* Venue */
@@ -2221,96 +2093,6 @@ a.register-btn--red {
 		padding: 84px 96px;
 		color: #ffffff;
 		margin: 0;
-		background-image: url('/assets/images/index/accommodation-bg-img.png');
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-
-	.accommodation-content--group-one {
-		width: 50%;
-		max-width: 607px;
-		align-items: flex-start;
-	}
-
-	.accommodation-content--group-two {
-		align-items: flex-start;
-		width: 50%;
-		max-width: 475px;
-	}
-
-	.accommodation-content--group-one > a {
-		display: flex;
-		margin: 0;
-	}
-
-	.accommodation-content--group-two > a {
-		display: none;
-	}
-
-	.accommodation-content--group-one > h2 {
-		font-family: 'ClashDisplay-SemiBold', sans-serif;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 40px;
-		line-height: 49px;
-		text-align: left;
-		letter-spacing: 0.045em;
-		margin: 0 0 25px;
-	}
-
-	.accommodation--container p {
-		font-size: 20px;
-		line-height: 150%;
-	}
-
-	.accommodation-content--group-one > p > span,
-	.accommodation-content--group-two > p > span {
-		font-family: 'SofiaProMedium', sans-serif;
-		font-weight: 600;
-	}
-
-	.accommodation-content--group-one > h6 {
-		font-family: 'SofiaProMedium', sans-serif;
-		font-weight: 700;
-		font-size: 25px;
-		line-height: 150%;
-		color: #ffbd14;
-		margin: 40px 0;
-	}
-
-	.accommodation-content--group-two > p.hostel-breakdown {
-		margin: 60px 0 0;
-	}
-
-	.accommodation-content--group-two > p > span.red-text {
-		font-family: 'SofiaProMedium', sans-serif;
-		font-weight: 500;
-		color: #ffffff;
-	}
-
-	.accommodation-content--group-two > ul {
-		width: 100%;
-		height: 144px;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-
-	.accommodation-content--group-two > ul:nth-of-type(2) {
-		height: 110px;
-	}
-
-	.accommodation-content--group-two > ul.dashed {
-		padding: 0 10px;
-		list-style-type: none;
-		margin: 28px 0 0;
-	}
-	.accommodation-content--group-two > ul.dashed > li {
-		font-size: 20px;
-		line-height: 150%;
-		margin: 2px 0;
-		width: 50%;
 	}
 
 	/* Prepare your heart to be blessed */
