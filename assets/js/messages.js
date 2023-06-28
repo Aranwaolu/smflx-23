@@ -4,7 +4,7 @@ const setDefault = () => {
 }
 
 const fetchMessagesData = async () => {
-	return await axios.get('https://smflx-b64a687ce7fc.herokuapp.com/api/v1/audiomessages')
+	return await axios.get('https://smflx-b64a687ce7fc.herokuapp.com/api/v1/messages')
 }
 
 const initMessages = async () => {
