@@ -21,9 +21,14 @@ const createMessagesList = (messages) => {
 		div.className = 'audio-message-component'
 
 		// Create the image element
+		const imageDiv = document.createElement('div')
+		imageDiv.className = 'audio-message-img-div'
+		imageDiv.style.height = '404px'
+
 		const image = document.createElement('img')
 		image.src = message.image_url
 		image.alt = ''
+		imageDiv.appendChild(image)
 
 		// Create the content div element
 		const contentDiv = document.createElement('div')
@@ -89,7 +94,7 @@ const createMessagesList = (messages) => {
 		contentDiv.appendChild(buttonsDiv)
 
 		// Append the content div to the main div
-		div.appendChild(image)
+		div.appendChild(imageDiv)
 		div.appendChild(contentDiv)
 
 		// Append the main div to the container element
