@@ -18,7 +18,7 @@ const initGallery = async () => {
 		if (response.data.data.length == 0) {
 			document.getElementById('photo-gallery--empty-state').style.display = 'block'
 		} else {
-			document.getElementById('photo-gallery--list').style.display = 'block'
+			document.getElementById('photo-gallery--list').style.display = 'flex'
 
 			let photoListContainer = document.getElementById('photo-gallery--list')
 

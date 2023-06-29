@@ -20,22 +20,19 @@
 	font-size: 48px;
 	line-height: 59px;
 	text-align: center;
-}
-
-.audio-messages-hero-container > h4:first-of-type {
 	font-family: 'ClashDisplay-Regular', sans-serif;
 	font-style: normal;
 	font-weight: 400;
+	max-width: 737px;
 }
 
-.audio-messages-hero-container > h4:nth-of-type(2) {
-	margin-top: -20px;
+.audio-messages-hero-container > h4 > span {
 	font-family: 'ClashDisplay-Bold', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 }
 
-.audio-messages-hero-container > h4:nth-of-type(2) > span {
+.audio-messages-hero-container > h4 > span > span {
 	color: #f47b20;
 }
 
@@ -49,277 +46,217 @@
 	text-align: center;
 }
 
-
-.audio-messages-body{
-    width: 100%;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    gap: 30px;
-	padding: 2em;
-
-	
-}
- .messages-gallery-container .messages-gallery-container-col{
-    width: 48.5%;
-    /* height: 21.85rem; */
-    height: auto;
-    background-color: white;
-    border-radius: 11px;
-    overflow: hidden;
-	
- }
- .messages-gallery-container-col .img-col{
-    width: 100%;
-    height: 60vh;
-    height: auto;
-	
-
- }
-  .messages-gallery-container-col img{
-    width: 100%;
-    height: 100%;
-	border-radius: 10px 10px 0 0px;
-    /* object-fit: cover; */
-    /* aspect-ratio: 4/2; */
-    
-    
- }
- .messages-gallery-container-col .mgc-text-col{
-    width:100%;
-    height: 40vh;
-    padding: 20.5px 53px 65px 53px;
-	background-color:#FFFFFF;
-	/* border-radius:0 10px; */
-	margin-top: -5px;
-	border-radius: 0px 0px 10px 10px;
-}
-.mgc-text-col h3{
-    font-weight: 600;
-    font-size: 21px;
-    line-height: 24px;
-}
-.mgc-text-col .mgc-title{
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #C82127;
-}
-.mgc-text-col .program{
-    font-family: 'Sofia Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    color: #423971;
-}
-.mgc-text-col .mgc-btn1{
-    background-color: #C82127;
-    border: 1px solid rgba(49, 42, 80, 1);
-    color: white;
-    width: 172px;
-    height: 56px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.mgc-text-col .mgc-btn2{
-    background-color:linear-gradient(0deg, #FFFFFF, #FFFFFF);
-    ;
-    border: 1px solid rgba(49, 42, 80, 1);
-    color: #312A50;
-    width: 205px;
-    height: 56px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.mgc-text-col .mgc-btn1:hover{
-    color: #312A50;
-    background-color: rgba(49, 42, 80, 0.24);
-}
-.mgc-text-col .mgc-btn2:hover{
-    color: #312A50;
-    background-color: rgba(49, 42, 80, 0.24);
-}
-.mgc-text-col .btn-col{
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    margin-top: 19px;
+.audio-messages-list-container {
+	padding: 83px 96px;
+	background: #e7fffa;
 }
 
-@media (max-width: 43.75rem){
-.messages-gallery-container{
+.audio-messages-list-container > h3 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 49px;
+	color: #312a50;
+	margin-bottom: 53px;
+}
+
+.audio-messages-body {
 	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.audio-message-component {
+	width: 598px;
+	height: 700px;
+	border-radius: 11px;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	gap: 26px;
-	/* margin: 2rem 0; */
+	background: #ffffff;
 }
- .messages-gallery-container .messages-gallery-container-col{
-	width:50%;
-	/* height: 23.67em; */
-	height: auto;
-	background-color: white;
-	border-radius: 11px;
-	overflow: hidden;
- }
-  .img-col{
+
+.audio-message-component img {
 	width: 100%;
-	height: 218.89px;
-	height: auto;
- }
- .messages-gallery-container-col img{
-	width: 100%;
-	height: 100%;
-	/* object-fit: cover; */
-	/* aspect-ratio: 4/2; */
-	
-	
- }
- .messages-gallery-container-col .mgc-text-col{
-	width:100%;
-	height: 50vh;
-	padding: 2rem;
-	margin-top: -4px;
-	/* padding: 20.5px 53px 65px 53px; */
+	height: 404px;
+	object-fit: cover;
 }
-.mgc-text-col h3{
+
+.audio-message--content {
+	flex: 1 0 100%;
+	padding: 4.1rem 5.3rem;
+}
+
+.audio-message--details {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	max-width: 368px;
+}
+
+.audio-message--details > h5 {
+	color: #312a50;
+	font-size: 2.4rem;
+	font-family: 'ClashDisplay-SemiBold', sans-serif;
 	font-weight: 600;
-	font-size: 16px;
-	line-height: 20px;
 }
-.mgc-text-col .mgc-title{
-	font-family: 'Sofia Pro';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	color: #C82127;
-}
-.mgc-text-col .program{
-	font-family: 'Sofia Pro';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
+
+.audio-message--details > p {
+	color: #c82127;
+	font-size: 1.6rem;
+	font-family: 'SofiaProRegular', sans-serif;
 	line-height: 150%;
+}
+
+.audio-message--details > p > .audio-message-date {
+	color: #f47b20;
+}
+
+.audio-message--details > h6 {
 	color: #423971;
+	font-size: 1.6rem;
+	font-family: 'SofiaProRegular', sans-serif;
+	font-weight: 700;
+	line-height: 150%;
 }
-.mgc-text-col .mgc-btn1{
-	background-color: #C82127;
-	border: 1px solid rgba(49, 42, 80, 1);
-	color: white;
-	width: 93px;
-	height: 35px;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: 0.5s;
-}
-.mgc-text-col .mgc-btn2{
-	background:linear-gradient(0deg, #FFFFFF, #FFFFFF);
-	border: 1px solid rgba(49, 42, 80, 1);
-	color: #312A50;
-	;
-	width: 157px;
-	height: 35px;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: 0.5s;
-}
-.mgc-text-col .mgc-btn1:hover{
-	background-color: transparent;
-	color: black;
-}
-.mgc-text-col .mgc-btn2:hover{
-	background-color: transparent;
-	color: black;
-}
-.mgc-text-col .btn-col{
-	width: 100%;
+
+.audio-message--btns {
+	margin-top: 19px;
 	display: flex;
 	gap: 10px;
-	margin-top: 19px;
 }
-}
-@media (max-width:768px) {
-	.audio-messages-body{
-	width: 100%;
-	display: block;
-}
-  .messages-gallery-container-col{
-	width: 100%;
-	height: auto;
-	background-color: white;
-	border-radius: 11px;
-	overflow: hidden;
- }
- .messages-gallery-container-col .img-col{
-	width: 100%;
-	height: auto;
- }
-  .messages-gallery-container-col img{
-	width: 100%;
-	height: 100%;		
- }
-  .mgc-text-col{
-	width: 100%;
-	height: auto;
-	padding: 2rem;
-	margin: 0;
-}
-.mgc-text-col h3{
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 20px;
-}
-.mgc-text-col .mgc-title{
-	font-family: 'Sofia Pro';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	color: #C82127;
-}
-.mgc-text-col .program{
-	font-family: 'Sofia Pro';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 150%;
-	color: #423971;
-}
-.mgc-text-col .mgc-btn1{
-	background-color: #C82127;
-	border: 1px solid rgba(49, 42, 80, 1);
-	color: white;
-	width: 93px;
-	height: 39px;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: 0.5s;
-}
-.mgc-text-col .mgc-btn2{
-	background:linear-gradient(0deg, #FFFFFF, #FFFFFF);
-	border: 1px solid rgba(49, 42, 80, 1);
-	color: #312A50;
-	width: 170px;
-	height: 39px;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: 0.5s;
-}
-.mgc-text-col .mgc-btn1:hover{
-	background-color: transparent;
-	color: black;
-}
-.mgc-text-col .mgc-btn2:hover{
-	background-color: transparent;
-	color: black;
-}
-.mgc-text-col .btn-col{
-	width: 100%;
+
+.audio-message--play-btn {
 	display: flex;
-	gap: 10px;
-	margin-top: 19px;
+	width: 17rem;
+	height: 5.6rem;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	border-radius: 3px;
+	background-color: #c82127;
+	color: #fff !important;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.6rem;
+	font-family: 'ClashDisplay-Regular', sans-serif;
+	letter-spacing: 0.072rem;
+	transition: background-color 0.3s ease-in-out;
 }
+
+.audio-message--play-btn:hover {
+	background-color: #951317;
+}
+
+.audio-message--download-btn {
+	display: flex;
+	width: 22.5rem;
+	height: 5.6rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	border: 1px solid rgba(49, 42, 80, 0.24);
+	background-color: #fff;
+	color: #312a50;
+	text-align: center;
+	font-size: 1.6rem;
+	font-family: 'ClashDisplay-Regular', sans-serif;
+	letter-spacing: 0.072rem;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.audio-message--download-btn:hover {
+	background-color: #eee;
+}
+
+@media (max-width: 768px) {
+	.audio-messages-hero-container {
+		width: 100%;
+		height: 431px;
+		justify-content: flex-start;
+		padding: 75px 0 0;
+		gap: 15px;
+	}
+
+	.audio-messages-hero-container > h4 {
+		font-size: 2.4rem;
+		line-height: 150%;
+		max-width: 33rem;
+		text-align: center;
+	}
+
+	.audio-messages-hero-container > p {
+		max-width: 325px;
+		font-size: 14px;
+	}
+
+	.audio-messages-list-container {
+		padding: 34px 30px;
+		background: #e7fffa;
+	}
+
+	.audio-messages-body {
+		width: 100%;
+		gap: 30px;
+	}
+
+	.audio-message-component {
+		width: 100%;
+		height: fit-content;
+		border-radius: 6px;
+	}
+
+	.audio-message-component img {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	.audio-message--content {
+		padding: 2.2rem 2.8rem;
+	}
+
+	.audio-message--details {
+		max-width: 320px;
+	}
+
+	.audio-message--details > h5 {
+		font-size: 1.7rem;
+	}
+
+	.audio-message--details > p {
+		font-size: 1.2rem;
+	}
+
+	.audio-message--details > h6 {
+		font-size: 1rem;
+	}
+
+	.audio-message--btns {
+		margin-top: 10px;
+		gap: 5px;
+	}
+
+	.audio-message--play-btn {
+		display: flex;
+		width: 9rem;
+		height: 4rem;
+		gap: 1rem;
+		border-radius: 1px;
+		font-size: 1.2rem;
+	}
+
+	.audio-message--download-btn {
+		display: flex;
+		width: 15rem;
+		height: 4rem;
+		justify-content: center;
+		align-items: center;
+		border-radius: 1px;
+		font-size: 1.2rem;
+		letter-spacing: 0.054rem;
+	}
 }

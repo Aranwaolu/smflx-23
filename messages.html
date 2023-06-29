@@ -33,9 +33,9 @@
 					<li class="navbarlist">
 						<a href="messages">Messages</a>
 					</li>
-					<li class="navbarlist">
+					<!-- <li class="navbarlist">
 						<a href="transcripts">Transcripts</a>
-					</li>
+					</li> -->
 				</ul>
 				<div class="burger-menu">
 					<i class="fa fa-bars bar"></i>
@@ -56,16 +56,17 @@
 						<li class="mobileNavbarList">
 							<a href="gallery">Photo Gallery</a>
 						</li>
-						<li class="mobileNavbarList">
+						<!-- <li class="mobileNavbarList">
 							<a href="transcripts">Transcripts</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</nav>
 
 			<div class="audio-messages-hero-container">
-				<h4>Listen Again and Again and Again</h4>
-				<h4>to <span>SMFLX</span> Audio Messages</h4>
+				<h4>
+					Listen Again and Again and Again <span>to <span>SMFLX</span> Audio Messages</span>
+				</h4>
 				<p>Stay Blessed as you listen again and again to all the messages ministered on SMFLX conference.</p>
 			</div>
 
@@ -79,40 +80,53 @@
 				</div>
 			</div>
 
-			<div id="audio-messages-container">
-				<div class="audio-messages--header">
-					<h3>SMFLX Audio Messages</h3>
+			<div class="loader-container" id="messages-loader">
+				<svg
+					version="1.1"
+					id="L9"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					x="0px"
+					y="0px"
+					viewBox="0 0 100 100"
+					enable-background="new 0 0 0 0"
+					xml:space="preserve"
+				>
+					<path fill="#333" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+						<animateTransform
+							attributeName="transform"
+							attributeType="XML"
+							type="rotate"
+							dur=".6s"
+							from="0 50 50"
+							to="360 50 50"
+							repeatCount="indefinite"
+						/>
+					</path>
+				</svg>
+			</div>
 
-					<div class="search-container">
-						<select name="Year 2023" id="" class="hide">
-							<option value="2023">section</option>
-						</select>
-						<select name="Year 2023" id="" class="">
-							<option value="">Year 2023</option>
-							<option value="Morning section">Morning Section</option>
-							<option value="Evening section">Evening Section</option>
-						</select>
-					</div>
-				</div>
+			<div class="audio-messages-list-container" id="audio-messages-list-container">
+				<h3>SMFLX Audio Messages</h3>
 
-				<div class="audio-messages-body">
-					<div class="messages-gallery-container-col">
-						<div class="img-col">
-							<img src="" alt="">
+				<div class="audio-messages-body" id="audio-messages-body">
+					<!-- <div class="audio-message-component">
+						<img src="assets/images/test/test.png" alt="" />
+						<div class="audio-message--content">
+							<div class="audio-message--details">
+								<h5>God’s Ideal on Family Upholding His Righteousness</h5>
+								<p>
+									By <span class="audio-message-minister">Pastor Thompson Ehima</span>
+									<span class="audio-message-date">on June 29th, 2023</span>
+								</p>
+								<h6>SMFLX 2023</h6>
+							</div>
+							<div class="audio-message--btns">
+								<a href="#" class="audio-message--play-btn">Play</a>
+								<button class="audio-message--download-btn">Download Transcript</button>
+							</div>
 						</div>
-						<div class="mgc-text-col">
-							<h3 id="messageTopic"></h3>
-								<div class="mgc-title">
-								<span class="pastorName"></span>  <span class="messageYear"></span>
-								</div>
-								<div class="program">
-								</div>
-								<div class="btn-col">
-									<a href=""><button class="mgc-btn1">Play </button></a>
-									<a href="#"><button class="mgc-btn2">Download Transcript</button></a>
-								</div>
-						</div>              
-					 </div>
+					</div> -->
 				</div>
 			</div>
 
@@ -132,8 +146,8 @@
 			</footer>
 		</main>
 
-		<!-- <script src="/assets/js/messages.js"></script>
-		<script src="assets/js/nav.js"></script>
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+		<script src="/assets/js/messages.js"></script>
+		<script src="/assets/js/nav.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</body>
 </html>
