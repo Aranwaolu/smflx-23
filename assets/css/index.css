@@ -45,9 +45,9 @@
 }
 
 .navbarlists {
-	width: 50%;
 	display: flex;
 	justify-content: space-around;
+	gap: 5rem;
 }
 
 .navbar .burger-menu {
@@ -55,8 +55,12 @@
 }
 
 .navbarlists a {
-	font-size: 2.4rem;
+	font-size: 1.8rem;
 	color: #423971;
+}
+
+.navbarlists a.active-page {
+	color: #c82127;
 }
 
 /* Note: backdrop-filter has minimal browser support */

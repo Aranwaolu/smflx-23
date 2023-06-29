@@ -17,6 +17,12 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
 		<title>SMFLX'23 - Messages</title>
 	</head>
 
@@ -31,7 +37,7 @@
 						<a href="gallery">Photo Gallery</a>
 					</li>
 					<li class="navbarlist">
-						<a href="messages">Messages</a>
+						<a href="messages" class="active-page">Messages</a>
 					</li>
 					<!-- <li class="navbarlist">
 						<a href="transcripts">Transcripts</a>
@@ -63,54 +69,58 @@
 				</div>
 			</nav>
 
-			<div class="audio-messages-hero-container">
-				<h4>
-					Listen Again and Again and Again <span>to <span>SMFLX</span> Audio Messages</span>
-				</h4>
-				<p>Stay Blessed as you listen again and again to all the messages ministered on SMFLX conference.</p>
-			</div>
-
-			<div id="audio-messages--empty-state" class="data-display--empty-state audio-messages--empty-state">
-				<h3>SMFLX Audio Messages</h3>
-
-				<div class="data-display--empty-state--content">
-					<img src="/assets/images/empty-state-icon.svg" alt="" />
-					<h5>No messages Yet. Watch out for this space</h5>
-					<p>Messages ministered in the conference will be shown in this space. Watch out for this space. Stay Blessed</p>
+			<div class="messages-full-container" id="messages-full-container">
+				<div class="audio-messages-hero-container">
+					<h4>
+						Listen Again and Again and Again <span>to <span>SMFLX</span> Audio Messages</span>
+					</h4>
+					<p>Stay Blessed as you listen again and again to all the messages ministered on SMFLX conference.</p>
 				</div>
-			</div>
 
-			<div class="loader-container" id="messages-loader">
-				<svg
-					version="1.1"
-					id="L9"
-					xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink"
-					x="0px"
-					y="0px"
-					viewBox="0 0 100 100"
-					enable-background="new 0 0 0 0"
-					xml:space="preserve"
-				>
-					<path fill="#333" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
-						<animateTransform
-							attributeName="transform"
-							attributeType="XML"
-							type="rotate"
-							dur=".6s"
-							from="0 50 50"
-							to="360 50 50"
-							repeatCount="indefinite"
-						/>
-					</path>
-				</svg>
-			</div>
+				<div id="audio-messages--empty-state" class="data-display--empty-state audio-messages--empty-state">
+					<h3>SMFLX Audio Messages</h3>
 
-			<div class="audio-messages-list-container" id="audio-messages-list-container">
-				<h3>SMFLX Audio Messages</h3>
+					<div class="data-display--empty-state--content">
+						<img src="/assets/images/empty-state-icon.svg" alt="" />
+						<h5>No messages Yet. Watch out for this space</h5>
+						<p>Messages ministered in the conference will be shown in this space. Watch out for this space. Stay Blessed</p>
+					</div>
+				</div>
 
-				<div class="audio-messages-body" id="audio-messages-body">
-					<!-- <div class="audio-message-component">
+				<div class="loader-container" id="messages-loader">
+					<svg
+						version="1.1"
+						id="L9"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						x="0px"
+						y="0px"
+						viewBox="0 0 100 100"
+						enable-background="new 0 0 0 0"
+						xml:space="preserve"
+					>
+						<path
+							fill="#333"
+							d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50"
+						>
+							<animateTransform
+								attributeName="transform"
+								attributeType="XML"
+								type="rotate"
+								dur=".6s"
+								from="0 50 50"
+								to="360 50 50"
+								repeatCount="indefinite"
+							/>
+						</path>
+					</svg>
+				</div>
+
+				<div class="audio-messages-list-container" id="audio-messages-list-container">
+					<h3>SMFLX Audio Messages</h3>
+
+					<div class="audio-messages-body" id="audio-messages-body">
+						<!-- <div class="audio-message-component">
 						<img src="assets/images/test/test.png" alt="" />
 						<div class="audio-message--content">
 							<div class="audio-message--details">
@@ -127,10 +137,36 @@
 							</div>
 						</div>
 					</div> -->
+					</div>
 				</div>
 			</div>
 
-			<footer class="footer">
+			<div class="messages-single-wrapper" id="messages-single-wrapper">
+				<div class="messages-single-container">
+					<a href="/messages" class="back-to-messages">Back to all messages</a>
+
+					<div class="messages-single--player" id="messages-single--player">
+						<!-- <div class="messages-single--content-wrapper">
+							<div class="messages-single--content">
+								<div class="messages-single--details">
+									<h5>God’s Ideal on Family Upholding His Righteousness</h5>
+									<p>By Pastor Thompson Ehima <span>on June 29th, 2023</span></p>
+									<h6>SMFLX 2023</h6>
+								</div>
+
+								<div class="messages-single--btns">
+									<button class="messages-single--download-audio">Download</button>
+									<button class="messages-single--download-trasncript">Get Transcript</button>
+								</div>
+							</div>
+						</div>
+
+						<audio class="audio-player" src="https://smflx.s3.us-east-2.amazonaws.com/message/audio/test.mp3" controls></audio> -->
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer" id="messages-footer">
 				<h2>Connect with us</h2>
 				<p>Ensure to connect with us on our social media platforms using the links below:</p>
 				<div class="footer--social-media">

@@ -8,12 +8,10 @@ const fetchTranscriptsData = async () => {
 }
 
 const initTranscripts = async () => {
-	let isGalleryLoading = true
 	setDefault()
 
 	try {
 		let response = await fetchTranscriptsData()
-		isGalleryLoading = false
 
 		if (response.data.data.length == 0) {
 			document.getElementById('transcripts--empty-state').style.display = 'block'

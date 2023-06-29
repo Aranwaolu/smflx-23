@@ -8,12 +8,10 @@ const fetchGalleryData = async () => {
 }
 
 const initGallery = async () => {
-	let isGalleryLoading = true
 	setDefault()
 
 	try {
 		let response = await fetchGalleryData()
-		isGalleryLoading = false
 
 		if (response.data.data.length == 0) {
 			document.getElementById('photo-gallery--empty-state').style.display = 'block'

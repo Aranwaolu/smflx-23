@@ -7,23 +7,8 @@ const fetchMessagesData = async () => {
 	return await axios.get('https://smflx-b64a687ce7fc.herokuapp.com/api/v1/messages')
 }
 
-const initMessages = async () => {
-	let isGalleryLoading = true
-	setDefault()
-
-	try {
-		let response = await fetchMessagesData()
-		isGalleryLoading = false
-		document.getElementById('messages-loader').style.display = 'none'
-
-		if (response.data.data.length == 0) {
-			document.getElementById('audio-messages--empty-state').style.display = 'block'
-		} else {
-			document.getElementById('audio-messages-list-container').style.display = 'block'
-			// loop throught the results and display
-			createMessagesList(response.data.data)
-		}
-	} catch (error) {}
+const fetchASingleMessage = async (uuid) => {
+	return await axios.get(`https://smflx-b64a687ce7fc.herokuapp.com/api/v1/messages/${uuid}`)
 }
 
 const createMessagesList = (messages) => {
@@ -84,7 +69,8 @@ const createMessagesList = (messages) => {
 
 		// Create the play button link element
 		const playBtnLink = document.createElement('a')
-		playBtnLink.href = '#'
+		playBtnLink.href = `/messages.html?id=${message.uuid}`
+		// playBtnLink.href = `/messages?id=${message.uuid}` // PRODUCTION
 		playBtnLink.className = 'audio-message--play-btn'
 		playBtnLink.dataset.audioUuid = message.uuid
 		playBtnLink.textContent = 'Play'
@@ -109,4 +95,129 @@ const createMessagesList = (messages) => {
 		// Append the main div to the container element
 		container.appendChild(div)
 	})
+}
+
+const initAllMessages = async () => {
+	setDefault()
+
+	try {
+		let response = await fetchMessagesData()
+
+		document.getElementById('messages-loader').style.display = 'none'
+
+		if (response.data.data.length == 0) {
+			document.getElementById('audio-messages--empty-state').style.display = 'block'
+		} else {
+			document.getElementById('audio-messages-list-container').style.display = 'block'
+			// loop throught the results and display
+			createMessagesList(response.data.data)
+		}
+	} catch (error) {}
+}
+
+const initSingleMessage = async (uuid) => {
+	let response = await fetchASingleMessage(uuid)
+	console.log(response)
+	setSingleMessage(response.data.data)
+}
+
+const setSingleMessage = (message) => {
+	const messagePlayerContainer = document.getElementById('messages-single--player')
+
+	// Create the content wrapper
+	const contentWrapper = document.createElement('div')
+	contentWrapper.classList.add('messages-single--content-wrapper')
+	contentWrapper.style.backgroundImage = `url(${message.image_banner_url})`
+
+	// Create the content div
+	const content = document.createElement('div')
+	content.classList.add('messages-single--content')
+
+	// Create the details section
+	const details = document.createElement('div')
+	details.classList.add('messages-single--details')
+
+	// Create the title heading
+	const title = document.createElement('h5')
+	title.textContent = message.title
+
+	// Create the minister and date paragraph
+	const ministerDate = document.createElement('p')
+	ministerDate.innerHTML = `By ${message.minister} <span> on ${message.date.slice(0, 10)}</span>`
+
+	// Create the SMFLX 2023 heading
+	const smflx = document.createElement('h6')
+	smflx.textContent = 'SMFLX 2023'
+
+	// Create the button section
+	const buttons = document.createElement('div')
+	buttons.classList.add('messages-single--btns')
+
+	// Create the download audio button
+	const downloadAudioBtn = document.createElement('button')
+	downloadAudioBtn.classList.add('messages-single--download-audio')
+	downloadAudioBtn.textContent = 'Download'
+	downloadAudioBtn.addEventListener('click', () => {
+		downloadMessage(message.audio_url, `SMFLX-23_${message.date.slice(0, 10)}_${message.title}-${message.minister}.mp3`)
+	})
+
+	// Create the download transcript button
+	const downloadTranscriptBtn = document.createElement('button')
+	downloadTranscriptBtn.classList.add('messages-single--download-transcript')
+	downloadTranscriptBtn.textContent = 'Get Transcript'
+
+	// Create the audio element
+	const audioElement = document.createElement('audio')
+	audioElement.classList.add('audio-player')
+	audioElement.src = message.audio_url
+	audioElement.controls = true
+
+	// Append the elements to their respective parent containers
+	details.appendChild(title)
+	details.appendChild(ministerDate)
+	details.appendChild(smflx)
+
+	buttons.appendChild(downloadAudioBtn)
+	buttons.appendChild(downloadTranscriptBtn)
+
+	content.appendChild(details)
+	content.appendChild(buttons)
+
+	contentWrapper.appendChild(content)
+
+	messagePlayerContainer.appendChild(contentWrapper)
+	messagePlayerContainer.appendChild(audioElement)
+}
+
+const initMessages = async () => {
+	document.getElementById('messages-full-container').style.display = 'none'
+	document.getElementById('messages-single-wrapper').style.display = 'none'
+
+	const urlParams = new URLSearchParams(window.location.search)
+	const id = urlParams.get('id')
+	console.log('id -->> ', id)
+	if (id == null) {
+		document.getElementById('messages-full-container').style.display = 'block'
+		document.getElementById('messages-footer').style.display = 'flex'
+
+		setTimeout(() => {
+			initAllMessages()
+		}, 1500)
+	} else {
+		document.getElementById('messages-single-wrapper').style.display = 'flex'
+		document.getElementById('messages-footer').style.display = 'flex'
+
+		setTimeout(() => {
+			initSingleMessage(id)
+		}, 500)
+	}
+}
+
+const downloadMessage = async (url, filename) => {
+	const response = await fetch(url)
+	const blob = await response.blob()
+	const link = document.createElement('a')
+	link.href = window.URL.createObjectURL(blob)
+	link.download = filename
+	link.click()
 }
