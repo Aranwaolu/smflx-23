@@ -1,6 +1,7 @@
 const setDefault = () => {
 	document.getElementById('photo-gallery--empty-state').style.display = 'none'
 	document.getElementById('photo-gallery--list').style.display = 'none'
+	document.getElementById('view-more-button-container').style.display = 'none'
 }
 
 const fetchGalleryData = async () => {
@@ -17,6 +18,7 @@ const initGallery = async () => {
 			document.getElementById('photo-gallery--empty-state').style.display = 'block'
 		} else {
 			document.getElementById('photo-gallery--list').style.display = 'flex'
+			document.getElementById('view-more-button-container').style.display = 'flex'
 
 			let photoListContainer = document.getElementById('photo-gallery--list')
 
