@@ -150,11 +150,11 @@
 /* HERO */
 .hero--container {
 	width: 100%;
-	height: 90vh;
+	/* height: 90vh; */
 	background: orange;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 	/* padding: 50px 30px; */
 	background-image: url('/assets/images/index/hero-bg.png');
@@ -166,10 +166,12 @@
 	position: relative;
 	overflow: hidden;
 }
-.hero--containter-img{
-width: 90%;
-height: 90vh;
-margin: 7% auto;
+
+.hero--containter-img {
+	width: 90%;
+	height: auto;
+	margin: 7% auto;
+	object-fit: cover;
 }
 
 .hero--container > h3 {
@@ -1274,23 +1276,19 @@ a.register-btn--red {
 	/* HERO */
 	.hero--container {
 		height: auto;
-		min-height: 100vh;
-		/* padding: 100px 30px; */
-		/* padding: 220px 30px 258px; */
+		height: 100vh;
 		background-position: center center;
 		color: #ffffff;
 		position: relative;
 		overflow: hidden;
 		background-image: url('/assets/images/index/hero-bg.png');
 		padding: 100px 30px;
-
 	}
 
-	.hero--containter-img{
+	.hero--containter-img {
 		width: 90%;
-		height: 90vh;
-		margin: 0% auto;
-		}
+	}
+
 	.hero--container > h3 {
 		font-weight: 700;
 		font-size: 40px;
